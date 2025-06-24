@@ -174,7 +174,7 @@ If crashes persist:
 * Use **Fishstrap** launcher instead of the standard Roblox client.
 * Set Fishstrap’s Deployment to `Production`.
 * Set Auto Channel Change Action to **Always Prompt** or download latest via RDD.
-* Launch Roblox via Fishstrap or RDD https://rdd.weao.xyz/.
+* Launch Roblox via Fishstrap or RDD https://rdd.weao.xyz/ — use the **second highlighted download**.
 * Attach Swift immediately once Roblox loading screen appears.
 * Refer to screenshots (provided in Discord) if unsure about Fishstrap setup.
 
@@ -189,7 +189,7 @@ Fix this by:
 * Using a Windows Administrator account.
 * Completely uninstall Roblox and Swift.
 * Reinstall Swift from [https://getswift.gg](https://getswift.gg).
-* Download Roblox via RDD or Fishstrap https://rdd.weao.xyz/.
+* Download Roblox via RDD or Fishstrap https://rdd.weao.xyz/ — use the **second highlighted download**.
 * Run both Swift and Roblox as Administrator.
 * Attach Swift promptly during Roblox launch.
 

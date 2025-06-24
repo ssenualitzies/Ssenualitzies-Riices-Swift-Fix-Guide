@@ -120,10 +120,6 @@ If you are unsure where to find your Swift scripts or how to add scripts for aut
   - `workspace` (for internal Swift files, rarely edited)  
   - `scripts` (where you can store your `.lua` script files)  
   - `autoexecute` (folder for scripts that auto-run on injection)
-- To add an auto-execute script:  
-  - Open the `autoexecute` folder  
-  - Create a `.txt` file or paste your script inside an existing file  
-  - Save and restart Swift to apply
 
 
 

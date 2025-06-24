@@ -189,7 +189,7 @@ Fix this by:
 * Using a Windows Administrator account.
 * Completely uninstall Roblox and Swift.
 * Reinstall Swift from [https://getswift.gg](https://getswift.gg).
-* Download Roblox via RDD or Fishstrap.
+* Download Roblox via RDD or Fishstrap https://rdd.weao.xyz/.
 * Run both Swift and Roblox as Administrator.
 * Attach Swift promptly during Roblox launch.
 

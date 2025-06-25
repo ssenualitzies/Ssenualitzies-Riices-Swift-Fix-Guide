@@ -40,7 +40,7 @@
 20. [GPU Error Fix Notice](#20-gpu-error-fix-notice)
 21. [FAQ: Is Swift a Virus? Is It Safe?](#21-faq-is-swift-a-virus-is-it-safe)
 22. [Swift is NOT a RAT – False Positive Explanation](#22-swift-is-not-a-rat--false-positive-explanation)
-23. [Support Our Team: Alternative Executors & Olemad Shoutout](#23-support-our-team-alternative-executors--olemad-shoutout)
+23. [If None Of the Fixes Worked (Support Olemad With Bloxproducts) Or Get Free Executors.](#23-support-our-team-alternative-executors--olemad-shoutout)
 24. [Multi-Instance Support Status](#24-multi-instance-support-status)
 25. [Official Swift Download Website](#25-official-swift-download-website)
 
@@ -335,7 +335,7 @@ Details:
 
 ---
 
-## 23. Support Our Team: Alternative Executors & Olemad Shoutout
+## 23. If None Of the Fixes Worked (Support Olemad With Bloxproducts) Or Get Free Executors.
 
 Support Swift and the staff by purchasing executors here:
 [https://bloxproducts.com/r/1293271221206651032](https://bloxproducts.com/r/1293271221206651032)

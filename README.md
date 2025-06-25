@@ -339,7 +339,7 @@ Details:
 
 Support Swift and the staff by purchasing executors here:
 [https://bloxproducts.com/r/1293271221206651032](https://bloxproducts.com/r/1293271221206651032)
-This directly helps our lead, Olemad, and the entire team.
+This directly helps our lead, Olemad, But If you're wanting free options you can go to [WEAO](https://whateggsare.online/)
 
 ---
 

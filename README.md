@@ -57,7 +57,7 @@
 Before attempting any fixes or troubleshooting, always **check Swift’s current operational status**. Swift may be down for maintenance or experiencing global issues, which local fixes won’t resolve.
 
 * Join the official Swift Discord server:
-  🔗 [discord.gg/getswiftgg](https://discord.gg/getswiftgg)
+  🔗 [Swift Server](https://discord.gg/getswiftgg)
 * Check the pinned **Status Channel** for updates about outages or patches:
   📢 [Status Channel](https://discord.com/channels/1311387776893321337/1364742225942286409)
 
@@ -207,7 +207,7 @@ To fix:
 * Open `Run` (`Win + R`), type `%localappdata%`, and press Enter.
 * Delete the following folders if they exist:
   `Roblox`, `Bloxstrap`, `Fishstrap`
-* Reinstall Roblox using the official RDD download: [https://rdd.weao.xyz/](https://rdd.weao.xyz/) — use the **second highlighted download**.
+* Reinstall Roblox using the official RDD download: [RDD.WEAO.XZY](https://rdd.weao.xyz/) — use the **second highlighted download**.
 * Run **both Roblox and Swift as Administrator**.
 * Launch Roblox, then attach Swift.
 
@@ -226,7 +226,7 @@ If crashes persist:
 * Use **Fishstrap** launcher instead of the standard Roblox client.
 * Set Fishstrap’s Deployment to `Production`.
 * Set Auto Channel Change Action to **Always Prompt** or download latest via RDD.
-* Launch Roblox via Fishstrap or RDD [https://rdd.weao.xyz/](https://rdd.weao.xyz/) — use the **second highlighted download**.
+* Launch Roblox via Fishstrap or RDD [RDD.WEAO.XZY](https://rdd.weao.xyz/) — use the **second highlighted download**.
 * Attach Swift immediately once Roblox loading screen appears.
 * Refer to screenshots (provided in Discord) if unsure about Fishstrap setup.
 
@@ -246,8 +246,8 @@ Fix this by:
 
 * Using a Windows Administrator account.
 * Completely uninstall Roblox and Swift.
-* Reinstall Swift from [https://getswift.gg](https://getswift.gg).
-* Download Roblox via RDD or Fishstrap [https://rdd.weao.xyz/](https://rdd.weao.xyz/) — use the **second highlighted download**.
+* Reinstall Swift from [Swift Website](https://getswift.gg).
+* Download Roblox via RDD or Fishstrap [RDD.WEAO.XZY](https://rdd.weao.xyz/) — use the **second highlighted download**.
 * Run both Swift and Roblox as Administrator.
 * Attach Swift promptly during Roblox launch.
 
@@ -284,7 +284,7 @@ Black screen issues during injection are rare but can be fixed by:
 
 If Swift does not update properly or key system pages fail to load:
 
-* Download and install **Cloudflare WARP** from [https://1.1.1.1/](https://1.1.1.1/)
+* Download and install **Cloudflare WARP** from [Warp Vpn](https://1.1.1.1/)
 * Enable WARP from the system tray icon.
 * Relaunch Swift and try injection again.
 * For key system website issues, open the site using **Microsoft Edge** or **Chrome incognito/private mode**.
@@ -442,7 +442,7 @@ If you receive the “No License Found” error:
 **Lifetime access is currently unavailable.**
 
 Stay updated via the official Swift Discord announcements channel:
-[https://discord.com/channels/1311387776893321337/1364332154439471284](https://discord.com/channels/1311387776893321337/1364332154439471284)
+[Announcements Channel](https://discord.com/channels/1311387776893321337/1364332154439471284)
 
 
 
@@ -545,7 +545,7 @@ Details:
 ## 25. If None Of the Fixes Worked (Support Olemad With Bloxproducts) Or Get Free Executors.
 
 Support Swift and the staff by purchasing executors here:
-[https://bloxproducts.com/r/1293271221206651032](https://bloxproducts.com/r/1293271221206651032)
+[Bloxproducts](https://bloxproducts.com/r/1293271221206651032)
 This directly helps our lead, Olemad, But If you're wanting free options you can go to [WEAO](https://whateggsare.online/)
 
 
@@ -561,7 +561,7 @@ This directly helps our lead, Olemad, But If you're wanting free options you can
 Currently, Swift **does NOT support** multi-instance usage.
 
 Stay tuned for updates in the official Discord:
-[https://discord.com/channels/1311387776893321337/1364333716872106044](https://discord.com/channels/1311387776893321337/1364333716872106044)
+[Change Logs](https://discord.com/channels/1311387776893321337/1364333716872106044)
 
 
 
@@ -574,7 +574,7 @@ Stay tuned for updates in the official Discord:
 ## 27. Official Swift Download Website
 
 Download the latest official Swift client here:
-[https://getswift.gg/](https://getswift.gg/)
+[Swift Website](https://getswift.gg/)
 
 
 
@@ -587,9 +587,9 @@ Download the latest official Swift client here:
 # Support & Contact
 
 For additional assistance, join the official Swift Discord:
-[https://discord.gg/getswiftgg](https://discord.gg/getswiftgg)
+[Swift Server](https://discord.gg/getswiftgg)
 
-Open a support ticket with detailed info and screenshots if needed.
+For Ticket Support Please Join Our Support Server. [Support Server](https://discord.gg/567TBYPb)
 
 
 

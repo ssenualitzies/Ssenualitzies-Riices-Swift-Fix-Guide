@@ -37,9 +37,6 @@
 23. [Multi-Instance Support Status](#23-multi-instance-support-status)
 24. [Official Swift Download Website](#24-official-swift-download-website)
 
-</details>
-
----
 ---
 
 ## 📋 Miscellaneous & Setup Guides
@@ -52,7 +49,7 @@
 - [Dependencies](#dependencies)
 - [Key System Problems](#key-system-problems)
 
----
+</details>
 ---
 
 ### 1. Verify Swift Status

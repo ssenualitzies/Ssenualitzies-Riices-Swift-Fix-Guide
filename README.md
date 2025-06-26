@@ -37,7 +37,6 @@
 23. [Multi-Instance Support Status](#23-multi-instance-support-status)
 24. [Official Swift Download Website](#24-official-swift-download-website)
 
----
 
 ## 📋 Miscellaneous & Setup Guides
 - [Roblox Version Help](#roblox-version-help)

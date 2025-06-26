@@ -587,9 +587,9 @@ Download the latest official Swift client here:
 # Support & Contact
 
 For additional assistance, join the official Swift Discord:
-[Swift Server](https://discord.gg/getswiftgg)
+[Swift Server](https://discord.gg/getswiftgg).
 
-For Ticket Support Please Join Our Support Server. [Support Server](https://discord.gg/567TBYPb)
+For Ticket Support Please Join Our Support Server: [Support Server](https://discord.gg/567TBYPb).
 
 
 

@@ -67,6 +67,10 @@ Waiting for official announcements will save you time and prevent unnecessary tr
 
 
 
+
+
+
+
 ## 2. Dependencies Installation
 
 Swift relies on several essential runtimes and libraries to run correctly. Missing or outdated dependencies often cause authentication failures, inject timeout errors, or crashes.
@@ -82,6 +86,10 @@ Please download and install the following **latest versions** from official Micr
 * [Direct3D Runtime (d3d)](https://www.microsoft.com/en-us/download/details.aspx?id=35)
 
 **After installation, restart your PC** to finalize setup.
+
+
+
+
 
 
 
@@ -109,6 +117,10 @@ Windows Defender and antivirus software often block Swift injection, mistaking i
 
 
 
+
+
+
+
 ## 4. Workspace / Scripts / Auto-Execute Access Guide
 
 If you’re unsure where to add your Lua scripts for Swift:
@@ -124,6 +136,10 @@ If you’re unsure where to add your Lua scripts for Swift:
 
 
 
+
+
+
+
 ## 5. Auto-Execute Setup Guide (First Method)
 
 To enable auto-execution of your script upon injection:
@@ -134,6 +150,10 @@ To enable auto-execution of your script upon injection:
 3. Paste your Lua script inside the `.txt` file.
 4. Save and close the file.
 5. Restart Swift and inject as normal; your script will run automatically.
+
+
+
+
 
 
 
@@ -155,6 +175,10 @@ If the above method doesn’t trigger auto-execution:
 
 
 
+
+
+
+
 ## 7. Time Sync Fix
 
 System clock issues can cause key system or authentication errors.
@@ -165,6 +189,10 @@ Fix by syncing your Windows time:
 2. Open **Date & Time Settings**.
 3. Click the **Sync Now** button under **Synchronize your clock**.
 4. Wait until synchronization completes and try again.
+
+
+
+
 
 
 
@@ -187,6 +215,10 @@ To fix:
 
 
 
+
+
+
+
 ## 9. Advanced Notepad Crash / Injection Fix
 
 If crashes persist:
@@ -197,6 +229,10 @@ If crashes persist:
 * Launch Roblox via Fishstrap or RDD [https://rdd.weao.xyz/](https://rdd.weao.xyz/) — use the **second highlighted download**.
 * Attach Swift immediately once Roblox loading screen appears.
 * Refer to screenshots (provided in Discord) if unsure about Fishstrap setup.
+
+
+
+
 
 
 
@@ -219,6 +255,10 @@ Fix this by:
 
 
 
+
+
+
+
 ## 11. Black Screen on Injection Fix
 
 Black screen issues during injection are rare but can be fixed by:
@@ -236,6 +276,10 @@ Black screen issues during injection are rare but can be fixed by:
 
 
 
+
+
+
+
 ## 12. Swift Not Updating / VPN Error / Website Not Loading Fix
 
 If Swift does not update properly or key system pages fail to load:
@@ -244,6 +288,10 @@ If Swift does not update properly or key system pages fail to load:
 * Enable WARP from the system tray icon.
 * Relaunch Swift and try injection again.
 * For key system website issues, open the site using **Microsoft Edge** or **Chrome incognito/private mode**.
+
+
+
+
 
 
 
@@ -263,6 +311,10 @@ If Swift is incompatible with the latest Roblox update, you can downgrade Roblox
 
 
 
+
+
+
+
 ## 14. Early Key Expire Fix
 
 If your Swift key expires early before the full 24 hours are up:
@@ -274,6 +326,10 @@ If your Swift key expires early before the full 24 hours are up:
 4. Press **Submit**.
 5. If it works, yippie!
 6. If it doesn’t, you must repeat the key system steps [🔑 WorkLink Easy Key Method – Full Guide](#15-worklink-easy-key-method--full-guide) 
+
+
+
+
 
 
 
@@ -327,6 +383,10 @@ If it doesn’t work, double-check that antivirus protection and VPNs are fully 
 
 
 
+
+
+
+
 ## 16. Ad Blocker Pop-up Fix for Key System
 
 If ad-block detection pop-ups block your key retrieval:
@@ -335,6 +395,10 @@ If ad-block detection pop-ups block your key retrieval:
 * Open Developer Tools (`Ctrl + Shift + I`).
 * Identify and delete the offending HTML elements causing ad-block detection.
 * Repeat as necessary until you can proceed.
+
+
+
+
 
 
 
@@ -353,6 +417,10 @@ If CAPTCHA fails to load:
 
 
 
+
+
+
+
 ## 18. No License Found – Suggested Solutions
 
 If you receive the “No License Found” error:
@@ -360,6 +428,10 @@ If you receive the “No License Found” error:
 * Use a VPN and refresh the page.
 * Repeat the key system process multiple times.
 * Use Microsoft Edge incognito mode for better success rates.
+
+
+
+
 
 
 
@@ -376,6 +448,10 @@ Stay updated via the official Swift Discord announcements channel:
 
 
 
+
+
+
+
 ## 20. How to Check Roblox Version & Confirm Update
 
 To confirm your Roblox client version:
@@ -385,6 +461,10 @@ To confirm your Roblox client version:
 3. Verify the version hash matches:
    `version-82f8ee8d17124507`
 4. If it doesn’t match, reinstall Roblox using official links.
+
+
+
+
 
 
 
@@ -405,12 +485,20 @@ To check if Swift injected successfully:
 
 
 
+
+
+
+
 ## 22. GPU Error Fix Notice
 
 If you encounter an **“Incompatible GPU Driver”** error:
 
 * This means you are running a Roblox version not supported by Swift.
 * Watch for announcements regarding new update compatibility.
+
+
+
+
 
 
 
@@ -424,6 +512,10 @@ Swift is **NOT a virus**.
 * PowerShell is used only to create a desktop shortcut.
 * Swift is digitally signed and verified.
 * Always download from official and trusted sources.
+
+
+
+
 
 
 
@@ -446,11 +538,19 @@ Details:
 
 
 
+
+
+
+
 ## 25. If None Of the Fixes Worked (Support Olemad With Bloxproducts) Or Get Free Executors.
 
 Support Swift and the staff by purchasing executors here:
 [https://bloxproducts.com/r/1293271221206651032](https://bloxproducts.com/r/1293271221206651032)
 This directly helps our lead, Olemad, But If you're wanting free options you can go to [WEAO](https://whateggsare.online/)
+
+
+
+
 
 
 
@@ -467,10 +567,18 @@ Stay tuned for updates in the official Discord:
 
 
 
+
+
+
+
 ## 27. Official Swift Download Website
 
 Download the latest official Swift client here:
 [https://getswift.gg/](https://getswift.gg/)
+
+
+
+
 
 
 

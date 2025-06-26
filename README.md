@@ -11,7 +11,7 @@
 >
 > Use Swift **at your own risk**. We strongly recommend using **alternate accounts**, avoiding risky behavior, and backing up your data frequently.
 
-
+---
 
 ## 📋 Table of Contents
 
@@ -29,7 +29,7 @@
 9. [Advanced Notepad Crash / Injection Fix](#9-advanced-notepad-crash--injection-fix)
 10. [Injection Timeout Error Fix](#10-injection-timeout-error-fix)
 11. [Black Screen on Injection Fix](#11-black-screen-on-injection-fix)
-12. [Swift Not Update / VPN Error / Website Not Loading Fix](#12-swift-not-updating--vpn-error--website-not-loading-fix)
+12. [Swift Module Not Update / VPN Error / Website Not Loading Fix](#12-swift-module-not-update--vpn-error--website-not-loading-fix)
 13. [Roblox Downgrade Guide (If Swift is Down)](#13-roblox-downgrade-guide-if-swift-is-down)
 14. [Early Key Expire Fix](#14-early-key-expire-fix)
 15. [🔑 WorkLink Easy Key Method – Full Guide](#15-worklink-easy-key-method--full-guide)
@@ -48,28 +48,20 @@
 
 </details>
 
-
-
-
+---
 
 ## 1. Verify Swift Status
 
 Before attempting any fixes or troubleshooting, always **check Swift’s current operational status**. Swift may be down for maintenance or experiencing global issues, which local fixes won’t resolve.
 
 * Join the official Swift Discord server:
-  🔗 [Swift Server](https://discord.gg/getswiftgg)
+  🔗 [Swift Main Discord](https://discord.gg/getswiftgg)
 * Check the pinned **Status Channel** for updates about outages or patches:
-  📢 [Status Channel](https://discord.com/channels/1311387776893321337/1364742225942286409)
+  📢 [Swift Status Channel](https://discord.com/channels/1311387776893321337/1364742225942286409)
 
 Waiting for official announcements will save you time and prevent unnecessary troubleshooting.
 
-
-
-
-
-
-
-
+---
 
 ## 2. Dependencies Installation
 
@@ -87,13 +79,7 @@ Please download and install the following **latest versions** from official Micr
 
 **After installation, restart your PC** to finalize setup.
 
-
-
-
-
-
-
-
+---
 
 ## 3. Windows Security Guide for Injection Issues
 
@@ -113,13 +99,7 @@ Windows Defender and antivirus software often block Swift injection, mistaking i
 
 > ⚠️ **Important:** Re-enable your antivirus protections once you finish using Swift to keep your system safe.
 
-
-
-
-
-
-
-
+---
 
 ## 4. Workspace / Scripts / Auto-Execute Access Guide
 
@@ -132,13 +112,7 @@ If you’re unsure where to add your Lua scripts for Swift:
   * `scripts` — Store your personal `.lua` scripts here.
   * `autoexecute` — Scripts placed here run automatically when you inject Swift.
 
-
-
-
-
-
-
-
+---
 
 ## 5. Auto-Execute Setup Guide (First Method)
 
@@ -151,13 +125,7 @@ To enable auto-execution of your script upon injection:
 4. Save and close the file.
 5. Restart Swift and inject as normal; your script will run automatically.
 
-
-
-
-
-
-
-
+---
 
 ## 6. Alternate Auto-Execute Fix (If First Method Fails)
 
@@ -171,13 +139,7 @@ If the above method doesn’t trigger auto-execution:
 6. Attach Swift injector to Roblox.
 7. The script should execute automatically upon injection.
 
-
-
-
-
-
-
-
+---
 
 ## 7. Time Sync Fix
 
@@ -190,13 +152,7 @@ Fix by syncing your Windows time:
 3. Click the **Sync Now** button under **Synchronize your clock**.
 4. Wait until synchronization completes and try again.
 
-
-
-
-
-
-
-
+---
 
 ## 8. Notepad / Crash Fix Guide
 
@@ -207,17 +163,11 @@ To fix:
 * Open `Run` (`Win + R`), type `%localappdata%`, and press Enter.
 * Delete the following folders if they exist:
   `Roblox`, `Bloxstrap`, `Fishstrap`
-* Reinstall Roblox using the official RDD download: [RDD.WEAO.XZY](https://rdd.weao.xyz/) — use the **second highlighted download**.
+* Reinstall Roblox using the official RDD download: [RDD Weao](https://rdd.weao.xyz/) — use the **second highlighted download**.
 * Run **both Roblox and Swift as Administrator**.
 * Launch Roblox, then attach Swift.
 
-
-
-
-
-
-
-
+---
 
 ## 9. Advanced Notepad Crash / Injection Fix
 
@@ -226,17 +176,11 @@ If crashes persist:
 * Use **Fishstrap** launcher instead of the standard Roblox client.
 * Set Fishstrap’s Deployment to `Production`.
 * Set Auto Channel Change Action to **Always Prompt** or download latest via RDD.
-* Launch Roblox via Fishstrap or RDD [RDD.WEAO.XZY](https://rdd.weao.xyz/) — use the **second highlighted download**.
+* Launch Roblox via Fishstrap or RDD [RDD Weao](https://rdd.weao.xyz/) — use the **second highlighted download**.
 * Attach Swift immediately once Roblox loading screen appears.
 * Refer to screenshots (provided in Discord) if unsure about Fishstrap setup.
 
-
-
-
-
-
-
-
+---
 
 ## 10. Injection Timeout Error Fix
 
@@ -247,17 +191,11 @@ Fix this by:
 * Using a Windows Administrator account.
 * Completely uninstall Roblox and Swift.
 * Reinstall Swift from [Swift Website](https://getswift.gg).
-* Download Roblox via RDD or Fishstrap [RDD.WEAO.XZY](https://rdd.weao.xyz/) — use the **second highlighted download**.
+* Download Roblox via RDD or Fishstrap [RDD Weao](https://rdd.weao.xyz/) — use the **second highlighted download**.
 * Run both Swift and Roblox as Administrator.
 * Attach Swift promptly during Roblox launch.
 
-
-
-
-
-
-
-
+---
 
 ## 11. Black Screen on Injection Fix
 
@@ -272,31 +210,20 @@ Black screen issues during injection are rare but can be fixed by:
   * Right-click `bloxstrap.exe` > Properties > Compatibility tab
   * Check **Disable fullscreen optimizations** and apply.
 
-
-
-
-
-
-
-
+---
 
 ## 12. Swift Module Not Update / VPN Error / Website Not Loading Fix
 
-If Swift does not update module properly, or key system pages fail to load, Or if the swift website doesn't load properly:
+If Swift module does not update properly or key system pages fail to load:
 
-* Download and install **Cloudflare WARP** from [Warp Vpn](https://1.1.1.1/)
+* Download and install **Cloudflare WARP** from [WARP VPN ](https://1.1.1.1/)
 * Enable WARP from the system tray icon.
 * Relaunch Swift and try injection again.
-* For key system website issues, open the site using **Microsoft Edge** or **Chrome incognito/private mode**
-* [system tray image for warp](https://media.discordapp.net/attachments/1209716503214293082/1387747873474744421/QtOVRDP.png?ex=685e786c&is=685d26ec&hm=423b9ab3423e76b205094d623b43dd506a787cdbc32483055ce957b46fd79c5a&=&width=474&height=233)
-* [activate vpn image](https://media.discordapp.net/attachments/1209716503214293082/1387748056706977832/G5DHc51.png?ex=685e7897&is=685d2717&hm=c2049702df5e1cbbfd95170660c4c7cbfcbdc918b43766692e0ca42b8b57979a&=&width=269&height=338)
+* For key system website issues, open the site using **Microsoft Edge** or **Chrome incognito/private mode**.
+* [system tray icon Image guide](https://media.discordapp.net/attachments/1209716503214293082/1387747873474744421/QtOVRDP.png?ex=685e786c&is=685d26ec&hm=423b9ab3423e76b205094d623b43dd506a787cdbc32483055ce957b46fd79c5a&=&width=474&height=233)
+* [Activate WARP Vpn Guide](https://media.discordapp.net/attachments/1209716503214293082/1387748056706977832/G5DHc51.png?ex=685e7897&is=685d2717&hm=c2049702df5e1cbbfd95170660c4c7cbfcbdc918b43766692e0ca42b8b57979a&=&width=269&height=338)
 
-
-
-
-
-
-
+---
 
 ## 13. Roblox Downgrade Guide (If Swift is Down)
 
@@ -308,13 +235,7 @@ If Swift is incompatible with the latest Roblox update, you can downgrade Roblox
 * Launch RobloxPlayerBeta.exe from the extracted folder.
 * **Important:** Downgrading can increase ban risk; use alternate accounts and VPNs for safety.
 
-
-
-
-
-
-
-
+---
 
 ## 14. Early Key Expire Fix
 
@@ -326,19 +247,15 @@ If your Swift key expires early before the full 24 hours are up:
 3. Copy that old key and paste it into the Swift key section on the UI.
 4. Press **Submit**.
 5. If it works, yippie!
-6. If it doesn’t, you must repeat the key system steps [🔑 WorkLink Easy Key Method – Full Guide](#15-worklink-easy-key-method--full-guide) 
+6. If it doesn’t, you must repeat the key system steps (see next section).
 
-
-
-
-
-
+---
 
 ## 15. 🔑 WorkLink Easy Key Method – Full Guide
 
 To ensure a smooth key generation process, please follow the steps below carefully:
 
-
+---
 
 ⚠️ **Before You Begin:**
 
@@ -348,14 +265,12 @@ To ensure a smooth key generation process, please follow the steps below careful
    ![Antivirus Real-Time Protection Off](https://media.discordapp.net/attachments/1209716503214293082/1380551174092230839/RLROR5G.png?ex=684449f9\&is=6842f879\&hm=70d71fc3686ea3fa39606da5ffc0acb62880c000d4755c5f5bd02dc297a3de99&=\&width=676\&height=423)
 
 2. **Disable VPNs**
-
-
-Ensure all VPNs are turned **off** before proceeding.
+   Ensure all VPNs are turned **off** before proceeding.
 
 3. **Use a Private Browser Window**
    Open the browser in **Incognito/Private Mode** (works with Chrome, Edge, Opera, Brave, Firefox).
 
-
+---
 
 ### 🧩 Key Generation Steps:
 
@@ -380,13 +295,7 @@ Ensure all VPNs are turned **off** before proceeding.
 ✅ If done correctly, you’ll now have your key ready.
 If it doesn’t work, double-check that antivirus protection and VPNs are fully disabled, and that you’re using a private browsing window.
 
-
-
-
-
-
-
-
+---
 
 ## 16. Ad Blocker Pop-up Fix for Key System
 
@@ -397,12 +306,7 @@ If ad-block detection pop-ups block your key retrieval:
 * Identify and delete the offending HTML elements causing ad-block detection.
 * Repeat as necessary until you can proceed.
 
-
-
-
-
-
-
+---
 
 ## 17. CAPTCHA Bug Troubleshooting
 
@@ -414,13 +318,7 @@ If CAPTCHA fails to load:
 * Open the page in private/incognito mode (`Ctrl + Shift + N`).
 * Microsoft Edge incognito mode generally works best.
 
-
-
-
-
-
-
-
+---
 
 ## 18. No License Found – Suggested Solutions
 
@@ -430,28 +328,16 @@ If you receive the “No License Found” error:
 * Repeat the key system process multiple times.
 * Use Microsoft Edge incognito mode for better success rates.
 
-
-
-
-
-
-
-
+---
 
 ## 19. Lifetime Access Status
 
 **Lifetime access is currently unavailable.**
 
 Stay updated via the official Swift Discord announcements channel:
-[Announcements Channel](https://discord.com/channels/1311387776893321337/1364332154439471284)
+[Swift Announcements](https://discord.com/channels/1311387776893321337/1364332154439471284)
 
-
-
-
-
-
-
-
+---
 
 ## 20. How to Check Roblox Version & Confirm Update
 
@@ -463,13 +349,7 @@ To confirm your Roblox client version:
    `version-82f8ee8d17124507`
 4. If it doesn’t match, reinstall Roblox using official links.
 
-
-
-
-
-
-
-
+---
 
 ## 21. Verify Swift Attachment via Developer Console
 
@@ -482,13 +362,7 @@ To check if Swift injected successfully:
 * Look for `"hello"` in the developer console output.
 * Provide a screenshot if you need further help.
 
-
-
-
-
-
-
-
+---
 
 ## 22. GPU Error Fix Notice
 
@@ -497,30 +371,22 @@ If you encounter an **“Incompatible GPU Driver”** error:
 * This means you are running a Roblox version not supported by Swift.
 * Watch for announcements regarding new update compatibility.
 
-
-
-
-
-
-
-
+---
 
 ## 23. FAQ: Is Swift a Virus? Is It Safe?
 
 Swift is **NOT a virus**.
 
-* Antivirus programs flag it due to memory injection behavior.
+* Antivirus programs flag it
+
+
+due to memory injection behavior.
+
 * PowerShell is used only to create a desktop shortcut.
 * Swift is digitally signed and verified.
 * Always download from official and trusted sources.
 
-
-
-
-
-
-
-
+---
 
 ## 24. Swift is NOT a RAT – False Positive Explanation
 
@@ -535,13 +401,7 @@ Details:
 [VirusTotal Community Report](https://www.virustotal.com/gui/file/3b19486b4e14b206ec8ab2602ec6a430f9fce7ef40247b1e1f4c6f004ee468b4/community)
 [Triage Report](https://tria.ge/250331-xzst9ayrt2)
 
-
-
-
-
-
-
-
+---
 
 ## 25. If None Of the Fixes Worked (Support Olemad With Bloxproducts) Or Get Free Executors.
 
@@ -549,13 +409,7 @@ Support Swift and the staff by purchasing executors here:
 [Bloxproducts](https://bloxproducts.com/r/1293271221206651032)
 This directly helps our lead, Olemad, But If you're wanting free options you can go to [WEAO](https://whateggsare.online/)
 
-
-
-
-
-
-
-
+---
 
 ## 26. Multi-Instance Support Status
 
@@ -564,37 +418,26 @@ Currently, Swift **does NOT support** multi-instance usage.
 Stay tuned for updates in the official Discord:
 [Change Logs](https://discord.com/channels/1311387776893321337/1364333716872106044)
 
-
-
-
-
-
-
-
+---
 
 ## 27. Official Swift Download Website
 
 Download the latest official Swift client here:
-[Swift Website](https://getswift.gg/)
+[Swift Main Discord](https://getswift.gg/)
 
-
-
-
-
-
-
-
+---
 
 # Support & Contact
 
 For additional assistance, join the official Swift Discord:
-[Swift Server](https://discord.gg/getswiftgg).
+[Swift Main Discord](https://discord.gg/getswiftgg)
 
-For Ticket Support Please Join Our Support Server: [Support Server](https://discord.gg/567TBYPb).
+If you Need Support For Swift Please Go To The Support Server [Swift Support Server](https://discord.gg/567TBYPb)
 
-
+---
 
 *This document is regularly updated. Please check back for the latest fixes and guides.*
 
+---
 
 **END OF GUIDE**

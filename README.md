@@ -29,7 +29,7 @@
 9. [Advanced Notepad Crash / Injection Fix](#9-advanced-notepad-crash--injection-fix)
 10. [Injection Timeout Error Fix](#10-injection-timeout-error-fix)
 11. [Black Screen on Injection Fix](#11-black-screen-on-injection-fix)
-12. [Swift Module Not Update / VPN Error / Website Not Loading Fix](#12-swift-module-not-updating--vpn-error--website-not-loading-fix)
+12. [Swift Not Update / VPN Error / Website Not Loading Fix](#12-swift-not-updating--vpn-error--website-not-loading-fix)
 13. [Roblox Downgrade Guide (If Swift is Down)](#13-roblox-downgrade-guide-if-swift-is-down)
 14. [Early Key Expire Fix](#14-early-key-expire-fix)
 15. [🔑 WorkLink Easy Key Method – Full Guide](#15-worklink-easy-key-method--full-guide)

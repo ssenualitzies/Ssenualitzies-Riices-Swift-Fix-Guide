@@ -266,13 +266,18 @@ Download the latest version at **[https://getswift.gg/](https://getswift.gg/)**.
 ---
 
 ## Full Uninstall and Reinstall
-This process is the best first step for many common issues.
+### This process is the best first step for many common issues.
+
+>[!TIP]
+>here is visual [install guide](https://media.catgirl.dpdns.org/736cdf0/)
+
 - Press `Win + R`, type `%localappdata%`, and delete the `Roblox`, `Bloxstrap`, and `Fishstrap` folders.
 - Press `Win + R`, type `%appdata%`, and delete the `swift` folder (back up scripts first).
 - Delete the folder where you downloaded `Swift.exe`.
 - Create a new folder for Swift and add it to your antivirus [exceptions](#3-windows-security-guide-for-injection-issues).
 - Install the [Dependencies](#dependencies) and re-download Swift from the official site.
 - Run as administrator and launch Roblox.
+- for inject timeout head to [inject-timeout-guide](#10-injection-timeout-error-fix)
 
 ---
 

@@ -29,7 +29,7 @@
 9. [Advanced Notepad Crash / Injection Fix](#9-advanced-notepad-crash--injection-fix)
 10. [Injection Timeout Error Fix](#10-injection-timeout-error-fix)
 11. [Black Screen on Injection Fix](#11-black-screen-on-injection-fix)
-12. [Swift Not Updating / VPN Error / Website Not Loading Fix](#12-swift-not-updating--vpn-error--website-not-loading-fix)
+12. [Swift Module Not Update / VPN Error / Website Not Loading Fix](#12-swift-module-not-updating--vpn-error--website-not-loading-fix)
 13. [Roblox Downgrade Guide (If Swift is Down)](#13-roblox-downgrade-guide-if-swift-is-down)
 14. [Early Key Expire Fix](#14-early-key-expire-fix)
 15. [🔑 WorkLink Easy Key Method – Full Guide](#15-worklink-easy-key-method--full-guide)
@@ -280,15 +280,16 @@ Black screen issues during injection are rare but can be fixed by:
 
 
 
-## 12. Swift Not Updating / VPN Error / Website Not Loading Fix
+## 12. Swift Module Not Update / VPN Error / Website Not Loading Fix
 
-If Swift does not update properly or key system pages fail to load:
+If Swift does not update module properly, or key system pages fail to load, Or if the swift website doesn't load properly:
 
 * Download and install **Cloudflare WARP** from [Warp Vpn](https://1.1.1.1/)
 * Enable WARP from the system tray icon.
 * Relaunch Swift and try injection again.
-* For key system website issues, open the site using **Microsoft Edge** or **Chrome incognito/private mode**.
-
+* For key system website issues, open the site using **Microsoft Edge** or **Chrome incognito/private mode**
+* [system tray image for warp](https://media.discordapp.net/attachments/1209716503214293082/1387747873474744421/QtOVRDP.png?ex=685e786c&is=685d26ec&hm=423b9ab3423e76b205094d623b43dd506a787cdbc32483055ce957b46fd79c5a&=&width=474&height=233)
+* [activate vpn image](https://media.discordapp.net/attachments/1209716503214293082/1387748056706977832/G5DHc51.png?ex=685e7897&is=685d2717&hm=c2049702df5e1cbbfd95170660c4c7cbfcbdc918b43766692e0ca42b8b57979a&=&width=269&height=338)
 
 
 

@@ -1,5 +1,4 @@
 # 🛠️ Swift Troubleshooting Guide
-<sub>A combined guide based on work by Ssenualitzies and LilahCodes/RiiCes</sub>
 
 ![Swift Status](https://stracker.catgirl.dpdns.org/badge.svg)
 

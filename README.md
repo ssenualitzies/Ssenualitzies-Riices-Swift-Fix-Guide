@@ -14,7 +14,7 @@
 
 1.  [Verify Swift Status](#1-verify-swift-status)
 2.  [Dependencies Installation](#2-dependencies-installation)
-3.  [Windows Security Guide for Injection Issues](#3-windows-security-guide-for-injection-issues)
+3.  [Windows Security Guide for Injection Issues](#3-windows-security-guide)
 4.  [Workspace / Scripts / Auto-Execute Access Guide](#4-workspace--scripts--auto-execute-access-guide)
 5.  [Auto-Execute Setup Guide (First Method)](#5-auto-execute-setup-guide-first-method)
 6.  [Alternate Auto-Execute Fix (If First Method Fails)](#6-alternate-auto-execute-fix-if-first-method-fails)
@@ -58,7 +58,7 @@ Before attempting any fixes, check the status badge at the top of this guide and
 ### 2. Dependencies Installation
 Missing runtimes cause errors. Install everything from the [Dependencies](#dependencies) section below. After installation, **restart your PC**.
 
-### 3. Windows Security Guide for Injection Issues
+### 3. Windows Security Guide
 > [!TIP]
 > Antivirus software often flags Swift by mistake. You must add an exception for Swift.
 

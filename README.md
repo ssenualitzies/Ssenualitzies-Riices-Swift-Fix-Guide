@@ -247,7 +247,7 @@ If your Swift key expires early before the full 24 hours are up:
 3. Copy that old key and paste it into the Swift key section on the UI.
 4. Press **Submit**.
 5. If it works, yippie!
-6. If it doesn’t, you must repeat the key system steps (see next section).
+6. If it doesn’t, you must repeat the key system steps 15. [🔑 WorkLink Easy Key Method – Full Guide](#15-worklink-easy-key-method--full-guide)  
 
 ---
 

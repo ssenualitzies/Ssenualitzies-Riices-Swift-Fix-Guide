@@ -74,6 +74,9 @@ Install all:
 * [DirectX](https://www.microsoft.com/en-us/download/details.aspx?id=8109)
 * [d3d](https://www.microsoft.com/en-us/download/details.aspx?id=35)
 
+* If you don't want to install these manually, you can use the [installer](https://github.com/riicess/Swift-TroubleShooting-Guide/blob/main/SwiftDepsInstall.exe).\
+The source code for this installer can be found [here](https://jmp.sh/XUtd6wQN).
+
 Then restart your PC.
 
 ---
@@ -250,21 +253,27 @@ Not yet supported. Stay updated via [Discord Change Logs](https://discord.com/ch
 ---
 
 ## 🧱 Bloxstrap Setup
+> [!TIP]
+> Use these instructions if you launch Roblox with **Bloxstrap**.
 
-* Launch Roblox via Bloxstrap
-* Wait for “Starting Roblox...” popup
-* Inject Swift once or twice **only during that window**
-* Do not attach before or after
+### Attaching Swift with Bloxstrap:
+- Launch Roblox with Bloxstrap. Wait for the **"Starting Roblox..."** popup to appear.
+- As soon as you see this message, try to attach Swift once or twice.
+- Do not attach before this message appears or after Roblox has fully loaded.
 
 ---
 
+
 ## 🐟 Fishstrap Setup
+> [!TIP]
+> We recommend **Fishstrap** as it gives you more control over Roblox versions.
 
-* Set Deployment Channel to **LIVE**
-* Enable **Always Prompt** for channel switching
-* Reject update prompts
-* Attach Swift during “Starting Roblox...” popup
-
+### Fishstrap Settings for Swift:
+- **Channel Configuration:** In settings, go to **Deployment** and set **Primary Channel** to `LIVE`.
+- **Automatic Channel Change:** Set "Automatic channel change action" to `Always Prompt`.
+- **Roblox Update Prompts:** If Roblox asks you to update, **Reject** the prompt.
+- **Attaching Swift:** Wait for the **"Starting Roblox..."** popup, then attach Swift once or twice.
+  
 ---
 
 ## ✅ End of Guide

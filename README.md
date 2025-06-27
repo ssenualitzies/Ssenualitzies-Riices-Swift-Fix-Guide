@@ -185,6 +185,7 @@ Use Microsoft Edge Incognito or Chrome Private Mode.
 
 If Swift is down, get an older Roblox build from [RDD Weao](https://rdd.weao.xyz/)  
 Extract and run `RobloxPlayerBeta.exe`.  
+[Downgrade Tutorial Video](https://cdn.discordapp.com/attachments/1364332807492468866/1374923673835929670/downgrading_tut_-_Made_with_Clipchamp.mp4?ex=685f46f4&is=685df574&hm=815fa6be42c65d6e4e94d0b0c4b929c4a572cc878718ccf6591d69c5cb50c2a6&)
 [Back to top](#table-of-contents)
 
 ---

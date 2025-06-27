@@ -100,25 +100,36 @@ Then restart your PC.
 
 ## 4. Workspace / Scripts / Auto-Execute Access Guide
 
-Go to `%appdata%\Swift`:
+* Press `Win + R`, type `%appdata%`, and press **Enter**.
+* A File Explorer window will open — **click the "Roaming" folder** at the top if it isn’t already selected.
+* Find and open the **Swift** folder.
+* Inside, you'll see the `workspace`, `scripts`, and `autoexecute` folders.
 
-* Place `.lua` scripts in `scripts`
-* For auto-execution, place them in `autoexecute`
-* OR use the shortcut `autoexec` inside the main Swift folder  
 [Back to top](#table-of-contents)
 
 ---
 
 ## 5. Auto-Execute Setup Guide First Method
 
-(see above)  
+1. Press `Win + R`, enter `C:\Users\user\AppData\Roaming\Swift`, and press Enter.
+2. Open the **autoexec** folder.
+3. Create a new `.txt` file in this folder using Notepad, paste your script inside, and save it.
+4. Relaunch Swift to apply the changes.
+
 [Back to top](#table-of-contents)
 
 ---
 
 ## 6. Alternate Auto-Execute Fix If First Method Fails
 
-(see above)  
+
+* In the `autoexecute` folder, create a new **.txt** file.
+* Name it however you want.
+* Paste your script into the file and save.
+* **Important:**
+  Run **Swift first**, then **Roblox**, and make sure both are launched as **Administrator**.
+  Once in-game, your script will auto-execute.
+
 [Back to top](#table-of-contents)
 
 ---

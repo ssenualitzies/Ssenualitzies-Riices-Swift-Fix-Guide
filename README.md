@@ -215,7 +215,7 @@ Or redo key system: [See Section 15](#15-worklink-easy-key-method-full-guide)
 
 * Disable antivirus + VPN
 * Use Incognito
-* Follow [Key Tutorial](https://media.catgirl.dpdns.org/ea1f547/)
+* Follow [Key Tutorial](https://media.catgirl.dpdns.org/e3c7374/)
 * Repeat 2–5 steps 3–4 times
 * Click “Skip” until “Go to destination” activates  
 [Back to top](#table-of-contents)

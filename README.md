@@ -165,10 +165,77 @@ Use alternate launchers like Fishstrap/Bloxstrap:
 
 ## 10. Injection Timeout Error Fix
 
-* Attach Swift **during** the “Starting Roblox” popup (not before or after)
-* Run both Swift & Roblox as Admin
-* Make sure `luau-lsp.exe` exists in the Swift folder
-* Try reinstallation if all else fails  
+## ✅ Step 1: Use an Administrator Account
+
+### 🔁 Option A: Temporarily Switch to an Admin Account
+
+1. **Log into a Windows administrator account**.
+2. **Remove Roblox data**:
+
+   * Press `Win + R`, type `%localappdata%` and press Enter.
+   * In the folder that opens, **delete the entire `Roblox` directory**.
+3. Download Roblox via [**RDD by Weao**](https://rdd.weao.xyz):
+
+   * Click the **“Download Latest Version”** (second highlighted link).
+   * Extract the downloaded folder fully.
+4. **Run Swift as administrator** (right‑click → *Run as administrator*).
+5. Inside the extracted `weao live` folder:
+
+   * Launch `RobloxPlayerBeta.exe`.
+   * Sign in to your Roblox account.
+   * Once on the **Roblox homepage**, press **Attach** in Swift.
+
+
+
+### 🔁 Option B: Stay on Your Regular Account
+
+> Already using an admin account or want to go back to your main one?
+
+1. Log into your **main (non‑admin) Windows account**.
+2. Launch both:
+
+   * **Swift** as administrator
+   * `RobloxPlayerBeta.exe` from the same `weao live` folder as administrator
+3. Once Roblox loads to the homepage, press **Attach** in Swift.
+
+
+
+## 🔄 Step 2: Reinstall Swift & Roblox (Clean Install)
+
+1. **Delete leftover data**:
+
+   * Press `Win + R`, type `%localappdata%` and press Enter.
+   * Delete any **`Swift`** and **`Roblox`** folders.
+2. **Uninstall via Control Panel**:
+
+   * Go to **Control Panel > Programs > Programs and Features** and uninstall both **Swift** and **Roblox**.
+3. **Reinstall both tools**:
+
+   * [Download Swift](https://getswift.gg)
+   * [Download Roblox via RDD](https://rdd.weao.xyz)
+
+
+
+### ⚙️ Optional: Use Custom Roblox Launchers
+
+You can also use one of these launchers for more control:
+
+* [**Bloxstrap**](https://bloxstraplabs.com)
+* [**Fishstrap**](https://www.fishstrap.app)
+
+> **Injection Timing Tips**:
+>
+> * For **Bloxstrap / Fishstrap** → Inject when **“Starting Roblox”** appears.
+> * For **RobloxPlayerBeta (Weao)** → Inject after fully loading into the homepage.
+
+---
+
+## 📌 Final Checklist
+
+* ✅ Always run **Swift** and **Roblox** as administrator.
+* ✅ Ensure `luau-lsp.exe` exists in your Swift folder.
+* 🚫 Do **not** use FastFlags, FPS unlockers, or ping tweakers—these can cause injection errors or bans.
+* 🔁 If issues persist, do a **full reinstall** using the steps above.
 [Back to top](#table-of-contents)
 
 ---

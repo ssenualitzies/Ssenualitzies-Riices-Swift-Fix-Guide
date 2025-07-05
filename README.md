@@ -166,7 +166,6 @@ Use alternate launchers like Fishstrap/Bloxstrap:
 ## 10. Injection Timeout Error Fix
 
 ## ✅ Step 1: Use an Administrator Account
-
 ### 🔁 Option A: Temporarily Switch to an Admin Account
 
 1. **Log into a Windows administrator account**.

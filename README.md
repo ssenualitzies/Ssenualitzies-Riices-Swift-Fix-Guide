@@ -378,7 +378,7 @@ Check:
 
 ## 26. If None Of the Fixes Worked
 
-Join [Swift Support](https://discord.gg/567TBYPb)  
+Join [Swift Support](https://discord.gg/MN25qSbU) 
 Or try [WEAO](https://whateggsare.online) for alternative executors  
 Support dev via [Bloxproducts](https://bloxproducts.com/r/1293271221206651032)  
 [Back to top](#table-of-contents)
@@ -396,7 +396,7 @@ Stay updated via [Discord Change Logs](https://discord.com/channels/131138777689
 
 ## 28. Official Swift Download Website
 
-👉 [https://getswift.gg/](https://getswift.vip/)  
+👉 [Swift Download](https://getswift.vip/)  
 [Back to top](#table-of-contents)
 
 ---

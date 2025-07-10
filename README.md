@@ -388,7 +388,7 @@ Support dev via [Bloxproducts](https://bloxproducts.com/r/1293271221206651032)
 ## 27. Multi-Instance Support Status
 
 ✅ Multi-instance support is now officially supported.  
-Launch Swift multiple times as long as each instance runs in its own environment.  
+Launch Swift, and use bloxstrap to use multiple instances with the box tab inside of swift which will display your roblox applications. 
 Stay updated via [Discord Change Logs](https://discord.com/channels/1311387776893321337/1364333716872106044)  
 [Back to top](#table-of-contents)
 
@@ -439,7 +439,7 @@ Stay updated via [Discord Change Logs](https://discord.com/channels/131138777689
 
 **Planned:**
 
-* Multi-instance support is coming soon. (Now live!)  
+* Multi-instance support is not exactly 100% helpful we're working on fixes and how to run it properly.
 [Back to top](#table-of-contents)
 
 ---

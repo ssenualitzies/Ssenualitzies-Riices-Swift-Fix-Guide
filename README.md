@@ -2,13 +2,13 @@
 
 ![Swift Status](https://stracker.catgirl.dpdns.org/badge.svg)
 
-> ⚠️ **WARNING:**
-> Swift is a third-party Roblox script executor that modifies Roblox process memory. This behavior is **detected** by Roblox’s anti-cheat systems, antivirus software, and Windows Defender.
+> ✅ **Multi-Instance Supported**  
+>  
+> ⚠️ **WARNING:**  
+> Swift is a third-party Roblox script executor that modifies Roblox process memory. This behavior is **detected** by Roblox’s anti-cheat systems, antivirus software, and Windows Defender.  
 >
-> **UNC Detection: 99%**
-> **SUNC Detection: 100%**
->
-> Swift does **NOT** support multi-injection (multi-instance). Attempting multiple instances simultaneously will likely cause errors or bans.
+> **UNC: 99%**  
+> **SUNC: 100%**  
 >
 > Use Swift **at your own risk**. We strongly recommend using **alternate accounts**, avoiding risky behavior, and backing up your data frequently.
 
@@ -31,21 +31,22 @@
 10. [Injection Timeout Error Fix](#10-injection-timeout-error-fix)  
 11. [Black Screen on Injection Fix](#11-black-screen-on-injection-fix)  
 12. [Swift Module Not Update VPN Error Website Not Loading Fix](#12-swift-module-not-update-vpn-error-website-not-loading-fix)  
-13. [Roblox Downgrade Guide If Swift is Down](#13-roblox-downgrade-guide-if-swift-is-down)  
-14. [Early Key Expire Fix](#14-early-key-expire-fix)  
-15. [WorkLink Easy Key Method Full Guide](#15-worklink-easy-key-method-full-guide)  
-16. [Ad Blocker Pop-up Fix for Key System](#16-ad-blocker-pop-up-fix-for-key-system)  
-17. [CAPTCHA Bug Troubleshooting](#17-captcha-bug-troubleshooting)  
-18. [No License Found Suggested Solutions](#18-no-license-found-suggested-solutions)  
-19. [Lifetime Access Status](#19-lifetime-access-status)  
-20. [How to Check Roblox Version Confirm Update](#20-how-to-check-roblox-version-confirm-update)  
-21. [Verify Swift Attachment via Developer Console](#21-verify-swift-attachment-via-developer-console)  
-22. [GPU Error Fix Notice](#22-gpu-error-fix-notice)  
-23. [FAQ Is Swift a Virus Is It Safe](#23-faq-is-swift-a-virus-is-it-safe)  
-24. [Swift is NOT a RAT False Positive Explanation](#24-swift-is-not-a-rat-false-positive-explanation)  
-25. [If None Of the Fixes Worked](#25-if-none-of-the-fixes-worked)  
-26. [Multi-Instance Support Status](#26-multi-instance-support-status)  
-27. [Official Swift Download Website](#27-official-swift-download-website)  
+13. [ScriptHub Not Loading Fix](#13-scripthub-not-loading-fix)  
+14. [Roblox Downgrade Guide If Swift is Down](#14-roblox-downgrade-guide-if-swift-is-down)  
+15. [Early Key Expire Fix](#15-early-key-expire-fix)  
+16. [WorkLink Easy Key Method Full Guide](#16-worklink-easy-key-method-full-guide)  
+17. [Ad Blocker Pop-up Fix for Key System](#17-ad-blocker-pop-up-fix-for-key-system)  
+18. [CAPTCHA Bug Troubleshooting](#18-captcha-bug-troubleshooting)  
+19. [No License Found Suggested Solutions](#19-no-license-found-suggested-solutions)  
+20. [Lifetime Access Status](#20-lifetime-access-status)  
+21. [How to Check Roblox Version Confirm Update](#21-how-to-check-roblox-version-confirm-update)  
+22. [Verify Swift Attachment via Developer Console](#22-verify-swift-attachment-via-developer-console)  
+23. [GPU Error Fix Notice](#23-gpu-error-fix-notice)  
+24. [FAQ Is Swift a Virus Is It Safe](#24-faq-is-swift-a-virus-is-it-safe)  
+25. [Swift is NOT a RAT False Positive Explanation](#25-swift-is-not-a-rat-false-positive-explanation)  
+26. [If None Of the Fixes Worked](#26-if-none-of-the-fixes-worked)  
+27. [Multi-Instance Support Status](#27-multi-instance-support-status)  
+28. [Official Swift Download Website](#28-official-swift-download-website)  
 
 ### Additional Tools and Info  
 - [Bloxstrap Setup](#bloxstrap-setup)  
@@ -67,11 +68,11 @@ Check [Swift Discord](https://discord.gg/getswiftgg) → #status for updates. Th
 
 Install all:
 
-* [.NET SDK 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.16-windows-x64-installer)
-* [VC Redist x64](https://aka.ms/vs/17/release/vc_redist.x64.exe)
-* [VC Redist x86](https://aka.ms/vs/17/release/vc_redist.x86.exe)
-* [WebView2 Runtime](https://go.microsoft.com/fwlink/p/?LinkId=2124703)
-* [DirectX](https://www.microsoft.com/en-us/download/details.aspx?id=8109)
+* [.NET SDK 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.412-windows-x64-installer)  
+* [VC Redist x64](https://aka.ms/vs/17/release/vc_redist.x64.exe)  
+* [VC Redist x86](https://aka.ms/vs/17/release/vc_redist.x86.exe)  
+* [WebView2 Runtime](https://go.microsoft.com/fwlink/p/?LinkId=2124703)  
+* [DirectX](https://www.microsoft.com/en-us/download/details.aspx?id=8109)  
 * [d3d](https://www.microsoft.com/en-us/download/details.aspx?id=35)
 
 * If you don't want to install these manually, you can use the [installer](https://github.com/riicess/Swift-TroubleShooting-Guide/blob/main/SwiftDepsInstall.exe).  
@@ -84,26 +85,26 @@ Then restart your PC.
 
 ## 3. Windows Security Guide for Injection Issues
 
-* Open **Windows Security > Virus & Threat Protection**
+* Open **Windows Security > Virus & Threat Protection**  
 * Disable:
 
-  * Real-time protection
-  * Tamper protection
-* Add the Swift folder to **exclusions**
-* Restore any quarantined Swift files
-* [Antivirus Help Image](https://media.discordapp.net/attachments/1209716503214293082/1367840129036849222/1bMOrpd.png?ex=685f3724&is=685de5a4&hm=343f5994e6998e538a22969edb528944a3d98e2ca832a93ab71230d564ec0a74&=&width=353&height=343)
-* [Protection history image](https://media.discordapp.net/attachments/1209716503214293082/1367840112834248746/d8JRR1m.png?ex=685f3720&is=685de5a0&hm=199de09bb90b76dff862a3060073a056ff72be9fce7ebc6da7a94c15459e8f1b&=&width=947&height=757)
-* [Virus And Threat Protection Help](https://media.discordapp.net/attachments/1209716503214293082/1387979611870203944/rJ6BuNK.png?ex=685f503e&is=685dfebe&hm=ff36bf3b6d64409db3b44a27b34ed500e287c7ecf12f602a53a85db9cecf3104&=&width=512&height=488)  
+  * Real-time protection  
+  * Tamper protection  
+* Add the Swift folder to **exclusions**  
+* Restore any quarantined Swift files  
+* [Antivirus Help Image](https://media.discordapp.net/attachments/1209716503214293082/1367840129036849222/1bMOrpd.png)  
+* [Protection history image](https://media.discordapp.net/attachments/1209716503214293082/1367840112834248746/d8JRR1m.png)  
+* [Virus And Threat Protection Help](https://media.discordapp.net/attachments/1209716503214293082/1387979611870203944/rJ6BuNK.png)  
 [Back to top](#table-of-contents)
 
 ---
 
 ## 4. Workspace / Scripts / Auto-Execute Access Guide
 
-* Press `Win + R`, type `%appdata%`, and press **Enter**.
-* A File Explorer window will open — **click the "Roaming" folder** at the top if it isn’t already selected.
-* Find and open the **Swift** folder.
-* Inside, you'll see the `workspace`, `scripts`, and `autoexecute` folders.
+* Press `Win + R`, type `%appdata%`, and press **Enter**.  
+* A File Explorer window will open — **click the "Roaming" folder** at the top if it isn’t already selected.  
+* Find and open the **Swift** folder.  
+* Inside, you'll see the `workspace`, `scripts`, and `autoexecute` folders.  
 
 [Back to top](#table-of-contents)
 
@@ -111,10 +112,10 @@ Then restart your PC.
 
 ## 5. Auto-Execute Setup Guide First Method
 
-1. Press `Win + R`, enter `C:\Users\user\AppData\Roaming\Swift`, and press Enter.
-2. Open the **autoexec** folder.
-3. Create a new `.txt` file in this folder using Notepad, paste your script inside, and save it.
-4. Relaunch Swift to apply the changes.
+1. Press `Win + R`, enter `C:\Users\user\AppData\Roaming\Swift`, and press Enter.  
+2. Open the **autoexec** folder.  
+3. Create a new `.txt` file in this folder using Notepad, paste your script inside, and save it.  
+4. Relaunch Swift to apply the changes.  
 
 [Back to top](#table-of-contents)
 
@@ -122,13 +123,12 @@ Then restart your PC.
 
 ## 6. Alternate Auto-Execute Fix If First Method Fails
 
-
-* In the `autoexecute` folder, create a new **.txt** file.
-* Name it however you want.
-* Paste your script into the file and save.
-* **Important:**
-  Run **Swift first**, then **Roblox**, and make sure both are launched as **Administrator**.
-  Once in-game, your script will auto-execute.
+* In the `autoexecute` folder, create a new **.txt** file.  
+* Name it however you want.  
+* Paste your script into the file and save.  
+* **Important:**  
+  Run **Swift first**, then **Roblox**, and make sure both are launched as **Administrator**.  
+  Once in-game, your script will auto-execute.  
 
 [Back to top](#table-of-contents)
 
@@ -156,8 +156,8 @@ Launch as Admin.
 
 Use alternate launchers like Fishstrap/Bloxstrap:
 
-* Set Fishstrap channel to **LIVE**, auto-prompt ON
-* Use [RDD Weao](https://rdd.weao.xyz/) to grab old versions if Swift isn’t updated
+* Set Fishstrap channel to **LIVE**, auto-prompt ON  
+* Use [RDD Weao](https://rdd.weao.xyz/) to grab old versions if Swift isn’t updated  
 * Inject Swift as soon as "Starting Roblox..." appears  
 [Back to top](#table-of-contents)
 
@@ -165,77 +165,61 @@ Use alternate launchers like Fishstrap/Bloxstrap:
 
 ## 10. Injection Timeout Error Fix
 
-## ✅ Step 1: Use an Administrator Account
-### 🔁 Option A: Temporarily Switch to an Admin Account
+### ✅ Step 1: Use an Administrator Account  
+#### 🔁 Option A: Temporarily Switch to an Admin Account
 
-1. **Log into a Windows administrator account**.
+1. **Log into a Windows administrator account**.  
 2. **Remove Roblox data**:
 
-   * Press `Win + R`, type `%localappdata%` and press Enter.
-   * In the folder that opens, **delete the entire `Roblox` directory**.
+   * Press `Win + R`, type `%localappdata%` and press Enter.  
+   * In the folder that opens, **delete the entire `Roblox` directory**.  
 3. Download Roblox via [**RDD by Weao**](https://rdd.weao.xyz):
 
-   * Click the **“Download Latest Version”** (second highlighted link).
-   * Extract the downloaded folder fully.
-4. **Run Swift as administrator** (right‑click → *Run as administrator*).
+   * Click the **“Download Latest Version”** (second highlighted link).  
+   * Extract the downloaded folder fully.  
+4. **Run Swift as administrator** (right‑click → *Run as administrator*).  
 5. Inside the extracted `weao live` folder:
 
-   * Launch `RobloxPlayerBeta.exe`.
-   * Sign in to your Roblox account.
-   * Once on the **Roblox homepage**, press **Attach** in Swift.
+   * Launch `RobloxPlayerBeta.exe`.  
+   * Sign in to your Roblox account.  
+   * Once on the **Roblox homepage**, press **Attach** in Swift.  
 
-
-
-### 🔁 Option B: Stay on Your Regular Account
+#### 🔁 Option B: Stay on Your Regular Account
 
 > Already using an admin account or want to go back to your main one?
 
-1. Log into your **main (non‑admin) Windows account**.
+1. Log into your **main (non‑admin) Windows account**.  
 2. Launch both:
 
-   * **Swift** as administrator
-   * `RobloxPlayerBeta.exe` from the same `weao live` folder as administrator
-3. Once Roblox loads to the homepage, press **Attach** in Swift.
+   * **Swift** as administrator  
+   * `RobloxPlayerBeta.exe` from the same `weao live` folder as administrator  
+3. Once Roblox loads to the homepage, press **Attach** in Swift.  
 
-
-
-## 🔄 Step 2: Reinstall Swift & Roblox (Clean Install)
+### 🔄 Step 2: Reinstall Swift & Roblox (Clean Install)
 
 1. **Delete leftover data**:
 
-   * Press `Win + R`, type `%localappdata%` and press Enter.
-   * Delete any **`Swift`** and **`Roblox`** folders.
+   * Press `Win + R`, type `%localappdata%` and press Enter.  
+   * Delete any **`Swift`** and **`Roblox`** folders.  
 2. **Uninstall via Control Panel**:
 
-   * Go to **Control Panel > Programs > Programs and Features** and uninstall both **Swift** and **Roblox**.
+   * Go to **Control Panel > Programs > Programs and Features** and uninstall both **Swift** and **Roblox**.  
 3. **Reinstall both tools**:
 
-   * [Download Swift](https://getswift.gg)
-   * [Download Roblox via RDD](https://rdd.weao.xyz)
-
-
+   * [Download Swift](https://getswift.vip)  
+   * [Download Roblox via RDD](https://rdd.weao.xyz)  
 
 ### ⚙️ Optional: Use Custom Roblox Launchers
 
 You can also use one of these launchers for more control:
 
-* [**Bloxstrap**](https://bloxstraplabs.com)
-* [**Fishstrap**](https://www.fishstrap.app)
+* [**Bloxstrap**](https://bloxstraplabs.com)  
+* [**Fishstrap**](https://www.fishstrap.app)  
 
-> **Injection Timing Tips**:
->
-> * For **Bloxstrap / Fishstrap** → Inject when **“Starting Roblox”** appears.
-> * For **RobloxPlayerBeta (Weao)** → Inject after fully loading into the homepage.
-
----
-
-## 📌 Final Checklist
-
-* ✅ Always run **Swift** and **Roblox** as administrator.
-* ✅ Ensure `luau-lsp.exe` exists in your Swift folder.
-* 🚫 Do **not** use FastFlags, FPS unlockers, or ping tweakers—these can cause injection errors or bans.
-* 🔁 If issues persist, do a **full reinstall** using the steps above.
-[Back to top](#table-of-contents)
+> **Injection Timing Tips**:  
+>  
+> * For **Bloxstrap / Fishstrap** → Inject when **“Starting Roblox”** appears.  
+> * For **RobloxPlayerBeta (Weao)** → Inject after fully loading into the homepage.  
 
 ---
 
@@ -258,60 +242,90 @@ Use Microsoft Edge Incognito or Chrome Private Mode.
 
 ---
 
-## 13. Roblox Downgrade Guide If Swift is Down
+## 13. ScriptHub Not Loading Fix
+
+📛 **ScriptHub Not Loading? Here's How to Fix It**
+
+Follow these steps carefully if your ScriptHub isn’t loading:
+
+🧹 **1. Clean Up Old Swift Files**  
+Delete any of these if they exist outside a folder:  
+`Bin`, `autoexec`, `msdia140.dll`, `scripts`, `Swift-Module.dll`, `Swift-Module.dll.bak`, `symsrv.dll`, `Workspace`
+
+📁 **2. Check the 'Swift' Folder**  
+• If you ALREADY have a folder named `Swift`:  
+→ Delete everything inside it **except** `Swift.exe`
+
+• If you DON’T have a `Swift` folder:  
+→ Create a new folder called `Swift`  
+→ Move `Swift.exe` into that folder
+
+🛡️ **3. Turn Off Your Antivirus**  
+Temporarily disable antivirus — it can block or corrupt ScriptHub loading.  
+[Antivirus Setup Screenshot](https://media.discordapp.net/attachments/1209716503214293082/1392508328676167753/1jqfxEo.png)
+
+🚀 **4. Launch Swift Properly**  
+Run `Swift.exe` **from inside the `Swift` folder**
+
+✅ Finished! This should fix ScriptHub loading issues. If not, Let support know and we'll help further.  
+[Back to top](#table-of-contents)
+
+---
+
+## 14. Roblox Downgrade Guide If Swift is Down
 
 If Swift is down, get an older Roblox build from [RDD Weao](https://rdd.weao.xyz/)  
 Extract and run `RobloxPlayerBeta.exe`.  
-[Downgrade Tutorial Video](https://cdn.discordapp.com/attachments/1350043328141463597/1387982621136654467/L7g9So7.mp4?ex=685f530c&is=685e018c&hm=e72f4f354cbff60b380b650e0bf89a2e63778fe671eb89bb2f1a4931fd5ad7ef&)
+[Downgrade Tutorial Video](https://cdn.discordapp.com/attachments/1350043328141463597/1387982621136654467/L7g9So7.mp4)
 
 [Back to top](#table-of-contents)
 
 ---
 
-## 14. Early Key Expire Fix
+## 15. Early Key Expire Fix
 
 Use `Win + V` to open clipboard history  
 Paste old key into Swift again  
-Or redo key system: [See Section 15](#15-worklink-easy-key-method-full-guide)  
+Or redo key system: [See Section 16](#16-worklink-easy-key-method-full-guide)  
 [Back to top](#table-of-contents)
 
 ---
 
-## 15. WorkLink Easy Key Method Full Guide
+## 16. WorkLink Easy Key Method Full Guide
 
-* Disable antivirus + VPN
-* Use Incognito
-* Follow [Key Tutorial](https://media.catgirl.dpdns.org/e3c7374/)
-* Repeat 2–5 steps 3–4 times
+* Disable antivirus + VPN  
+* Use Incognito  
+* Follow [Key Tutorial](https://media.catgirl.dpdns.org/e3c7374/)  
+* Repeat 2–5 steps 3–4 times  
 * Click “Skip” until “Go to destination” activates  
 [Back to top](#table-of-contents)
 
 ---
 
-## 16. Ad Blocker Pop-up Fix for Key System
+## 17. Ad Blocker Pop-up Fix for Key System
 
-* Use Edge Incognito
-* Disable adblock or delete popup element in Inspect tool
+* Use Edge Incognito  
+* Disable adblock or delete popup element in Inspect tool  
 * Use VPN for license issue or retry multiple times  
 [Back to top](#table-of-contents)
 
 ---
 
-## 17. CAPTCHA Bug Troubleshooting
+## 18. CAPTCHA Bug Troubleshooting
 
 * Try multiple browsers or disable protection.  
 [Back to top](#table-of-contents)
 
 ---
 
-## 18. No License Found Suggested Solutions
+## 19. No License Found Suggested Solutions
 
 * Retry, switch IP/VPN, or clear cache.  
 [Back to top](#table-of-contents)
 
 ---
 
-## 19. Lifetime Access Status
+## 20. Lifetime Access Status
 
 Currently unavailable — check Discord, for updates of release.  
 [Announcements Swift](https://discord.com/channels/1311387776893321337/1364332154439471284)  
@@ -319,15 +333,15 @@ Currently unavailable — check Discord, for updates of release.
 
 ---
 
-## 20. How to Check Roblox Version Confirm Update
+## 21. How to Check Roblox Version Confirm Update
 
-* Right-click `RobloxPlayerBeta.exe` or `bloxstrap.exe` → Properties > Details
+* Right-click `RobloxPlayerBeta.exe` or `bloxstrap.exe` → Properties > Details  
 * Compare hash to Swift’s required version from Discord  
 [Back to top](#table-of-contents)
 
 ---
 
-## 21. Verify Swift Attachment via Developer Console
+## 22. Verify Swift Attachment via Developer Console
 
 Inject Swift  
 Open F9 in Roblox  
@@ -336,33 +350,33 @@ Type `print("hello")` in Swift console — check if it appears in Roblox
 
 ---
 
-## 22. GPU Error Fix Notice
+## 23. GPU Error Fix Notice
 
 Means Swift is outdated or GPU is unsupported. Wait for Swift to update.  
 [Back to top](#table-of-contents)
 
 ---
 
-## 23. FAQ Is Swift a Virus Is It Safe
+## 24. FAQ Is Swift a Virus Is It Safe
 
 No — it is flagged due to injection behavior.  
-Always download from [getswift.gg](https://getswift.gg)  
+Always download from [getswift.gg](https://getswift.vip)  
 [Back to top](#table-of-contents)
 
 ---
 
-## 24. Swift is NOT a RAT False Positive Explanation
+## 25. Swift is NOT a RAT False Positive Explanation
 
 Swift is NOT a RAT.  
 Check:
 
-* [VirusTotal Report](https://www.virustotal.com/gui/file/3b19486b4e14b206ec8ab2602ec6a430f9fce7ef40247b1e1f4c6f004ee468b4/community)
+* [VirusTotal Report](https://www.virustotal.com/gui/file/3b19486b4e14b206ec8ab2602ec6a430f9fce7ef40247b1e1f4c6f004ee468b4/community)  
 * [Triage Analysis](https://tria.ge/250331-xzst9ayrt2)  
 [Back to top](#table-of-contents)
 
 ---
 
-## 25. If None Of the Fixes Worked
+## 26. If None Of the Fixes Worked
 
 Join [Swift Support](https://discord.gg/567TBYPb)  
 Or try [WEAO](https://whateggsare.online) for alternative executors  
@@ -371,16 +385,18 @@ Support dev via [Bloxproducts](https://bloxproducts.com/r/1293271221206651032)
 
 ---
 
-## 26. Multi-Instance Support Status
+## 27. Multi-Instance Support Status
 
-Not yet supported. Stay updated via [Discord Change Logs](https://discord.com/channels/1311387776893321337/1364333716872106044)  
+✅ Multi-instance support is now officially supported.  
+Launch Swift multiple times as long as each instance runs in its own environment.  
+Stay updated via [Discord Change Logs](https://discord.com/channels/1311387776893321337/1364333716872106044)  
 [Back to top](#table-of-contents)
 
 ---
 
-## 27. Official Swift Download Website
+## 28. Official Swift Download Website
 
-👉 [https://getswift.gg/](https://getswift.gg/)  
+👉 [https://getswift.gg/](https://getswift.vip/)  
 [Back to top](#table-of-contents)
 
 ---
@@ -392,8 +408,8 @@ Not yet supported. Stay updated via [Discord Change Logs](https://discord.com/ch
 
 ### Attaching Swift with Bloxstrap:
 
-* Launch Roblox with Bloxstrap. Wait for the "Starting Roblox..." popup to appear.
-* As soon as you see this message, try to attach Swift once or twice.
+* Launch Roblox with Bloxstrap. Wait for the "Starting Roblox..." popup to appear.  
+* As soon as you see this message, try to attach Swift once or twice.  
 * Do not attach before this message appears or after Roblox has fully loaded.  
 [Back to top](#table-of-contents)
 
@@ -406,9 +422,9 @@ Not yet supported. Stay updated via [Discord Change Logs](https://discord.com/ch
 
 ### Fishstrap Settings for Swift:
 
-* **Channel Configuration:** In settings, go to Deployment and set Primary Channel to LIVE.
-* **Automatic Channel Change:** Set "Automatic channel change action" to Always Prompt.
-* **Roblox Update Prompts:** If Roblox asks you to update, Reject the prompt.
+* **Channel Configuration:** In settings, go to Deployment and set Primary Channel to LIVE.  
+* **Automatic Channel Change:** Set "Automatic channel change action" to Always Prompt.  
+* **Roblox Update Prompts:** If Roblox asks you to update, Reject the prompt.  
 * **Attaching Swift:** Wait for the "Starting Roblox..." popup, then attach Swift once or twice.  
 [Back to top](#table-of-contents)
 
@@ -418,12 +434,12 @@ Not yet supported. Stay updated via [Discord Change Logs](https://discord.com/ch
 
 **Script editor bugs:**
 
-* Tab autofill does not work correctly.
+* Tab autofill does not work correctly.  
 * You cannot rename files or tabs in the editor.
 
 **Planned:**
 
-* Multi-instance support is coming soon.  
+* Multi-instance support is coming soon. (Now live!)  
 [Back to top](#table-of-contents)
 
 ---

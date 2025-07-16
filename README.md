@@ -276,7 +276,7 @@ Run `Swift.exe` **from inside the `Swift` folder**
 
 If Swift is down, get an older Roblox build from [RDD Weao](https://rdd.weao.xyz/)  
 Extract and run `RobloxPlayerBeta.exe`.  
-[Downgrade Tutorial Video](https://cdn.discordapp.com/attachments/1350043328141463597/1387982621136654467/L7g9So7.mp4)
+[Downgrade Tutorial Video](https://discord.com/channels/1311387776893321337/1364332807492468866/1374923678910775408)
 
 [Back to top](#table-of-contents)
 

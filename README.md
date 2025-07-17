@@ -611,6 +611,7 @@ Swift requires your Windows system clock to be accurate to work properly. Follow
 - Click **Sync now** to manually sync your clock.  
 - Verify your time zone is set correctly.  
 - Restart Swift after syncing.
+- [sync](https://imgur.com/a/VLxFdbV.png)
 
 ---
 
@@ -632,8 +633,6 @@ Swift requires your Windows system clock to be accurate to work properly. Follow
 ---
 
 Following these steps should fix most system clock-related Swift issues.
-
-- [sync](https://imgur.com/a/VLxFdbV.png)
 
   
 [Back to top](#table-of-contents)

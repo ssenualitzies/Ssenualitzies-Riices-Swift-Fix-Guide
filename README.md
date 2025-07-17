@@ -1,9 +1,8 @@
-# 🛠️ Ssenualitzies/Riices Swift Fixes Guide
+# 🔧 Ssenualitzies/Riices Swift Fixes Guide
 
 ![Swift Status](https://stracker.catgirl.dpdns.org/badge.svg)
 
 > ✅ **Multi-Instance Supported**  
->  
 > ⚠️ **WARNING:**  
 > Swift is a third-party Roblox script executor that modifies Roblox process memory. This behavior is **detected** by Roblox’s anti-cheat systems, antivirus software, and Windows Defender.  
 >
@@ -11,6 +10,10 @@
 > **SUNC: 100%**  
 >
 > Use Swift **at your own risk**. We strongly recommend using **alternate accounts**, avoiding risky behavior, and backing up your data frequently.
+
+Big thanks to **riicess** for all the helpful info that made this guide possible. I used parts of his guide to put this together.
+You can check out his original work here: [riicess Swift Fix Guide](https://github.com/riicess/Swift-TroubleShooting-Guide)
+And if you want, say hi to him on Discord — his username is **riicess**.
 
 ---
 
@@ -47,11 +50,12 @@
 26. [If None Of the Fixes Worked](#26-if-none-of-the-fixes-worked)  
 27. [Multi-Instance Support Status](#27-multi-instance-support-status)  
 28. [Official Swift Download Website](#28-official-swift-download-website)  
-
-### Additional Tools and Info  
-- [Bloxstrap Setup](#bloxstrap-setup)  
-- [Fishstrap Setup](#fishstrap-setup)  
-- [Known Issues Planned Features](#known-issues--planned-features)
+29. [What VPN to Use](#29-what-vpn-to-use)  
+30. [Module Not Found Fix](#30-module-not-found-fix)  
+31. [Failed to Relocate Module Fix](#31-failed-to-relocate-module-fix)  
+32. [System Clock Incorrect Fix](#32-system-clock-incorrect-fix)  
+33. [Fatal Error: Unexpected Error](#33-fatal-error-unexpected-error)  
+34. [Fatal Error: ServerCreationFailed](#34-fatal-error-servercreationfailed)
 
 </details>
 
@@ -75,7 +79,7 @@ Install all:
 * [DirectX](https://www.microsoft.com/en-us/download/details.aspx?id=8109)  
 * [d3d](https://www.microsoft.com/en-us/download/details.aspx?id=35)
 
-* If you don't want to install these manually, you can use the [installer](https://github.com/riicess/Swift-TroubleShooting-Guide/blob/main/SwiftDepsInstall.exe).  
+If you don't want to install these manually, you can use the [installer](https://github.com/riicess/Swift-TroubleShooting-Guide/blob/main/SwiftDepsInstall.exe).  
 The source code for this installer can be found [here](https://jmp.sh/XUtd6wQN).
 
 Then restart your PC.  
@@ -87,7 +91,6 @@ Then restart your PC.
 
 * Open **Windows Security > Virus & Threat Protection**  
 * Disable:
-
   * Real-time protection  
   * Tamper protection  
 * Add the Swift folder to **exclusions**  
@@ -274,9 +277,56 @@ Run `Swift.exe` **from inside the `Swift` folder**
 
 ## 14. Roblox Downgrade Guide If Swift is Down
 
-If Swift is down, get an older Roblox build from [RDD Weao](https://rdd.weao.xyz/)  
-Extract and run `RobloxPlayerBeta.exe`.  
-[Downgrade Tutorial Video](https://discord.com/channels/1311387776893321337/1364332807492468866/1374923678910775408)
+# 📥 How to Downgrade Roblox
+
+This quick guide will help you downgrade your Roblox client to a compatible version and attach **Swift** successfully.
+
+---
+
+### 1. Open the Downloader  
+Visit: [https://rdd.weao.xyz/](https://rdd.weao.xyz/)
+
+---
+
+### 2. Select Version  
+Click **DOWNLOAD SPECIFIED HASH** and paste this version hash: version-225e87fdb7254f64
+![Version](https://i.imgur.com/hFf0gjI.png)
+
+---
+
+### 3. Download Client  
+Click **DOWNLOAD SPECIFIED HASH** again and wait for the download to complete.
+
+---
+
+### 4. Extract Files  
+Use File Explorer to extract the downloaded folder.  
+![Extracting](https://imgur.com/a/onvn0Iz)
+
+---
+
+### 5. Run Files  
+Launch `swift.exe`, then open `RobloxPlayerBeta.exe` inside the extracted `weao-live` folder.
+
+---
+
+### 6. Attach Swift  
+Once Roblox loads to the homepage, attach Swift. Injection should happen automatically.
+
+---
+
+### 7. Need Help?  
+If this process doesn’t work, make a ticket inside of the support server [support server](https://discord.gg/MN25qSbU)
+you can do that by going to the [tickets](https://discord.com/channels/1178856344120459336/1312500759975432336) channel and messaging @swift modmail
+
+---
+
+### ⚠ Important Notes  
+- Avoid bootstrappers that use FastFlags, as they may cause detections.  
+- Use alternate accounts combined with VPN IPs to reduce ban risk.  
+- Never use your main Roblox account for this process.  
+- A full video tutorial is pinned in YAP Announcements:  
+  [Tutorial Link](https://discord.com/channels/1311387776893321337/1364332807492468866)
 
 [Back to top](#table-of-contents)
 
@@ -378,7 +428,7 @@ Check:
 
 ## 26. If None Of the Fixes Worked
 
-Join [Swift Support](https://discord.gg/MN25qSbU) 
+Join [Swift Support](https://discord.gg/MN25qSbU)  
 Or try [WEAO](https://whateggsare.online) for alternative executors  
 Support dev via [Bloxproducts](https://bloxproducts.com/r/1293271221206651032)  
 [Back to top](#table-of-contents)
@@ -388,7 +438,7 @@ Support dev via [Bloxproducts](https://bloxproducts.com/r/1293271221206651032)
 ## 27. Multi-Instance Support Status
 
 ✅ Multi-instance support is now officially supported.  
-Launch Swift, and use bloxstrap to use multiple instances with the box tab inside of swift which will display your roblox applications. 
+Launch Swift, and use bloxstrap to use multiple instances with the box tab inside of swift which will display your roblox applications.  
 Stay updated via [Discord Change Logs](https://discord.com/channels/1311387776893321337/1364333716872106044)  
 [Back to top](#table-of-contents)
 
@@ -401,49 +451,103 @@ Stay updated via [Discord Change Logs](https://discord.com/channels/131138777689
 
 ---
 
-## Bloxstrap Setup
+## 29. What VPN to Use
 
-> [TIP]  
-> Use these instructions if you launch Roblox with **Bloxstrap**.
+For best results with Swift, use a **reliable VPN** that supports:
 
-### Attaching Swift with Bloxstrap:
+- Low latency connections  
+- IP rotation or multiple exit nodes  
+- No DNS leaks  
+- Easy toggle on/off  
 
-* Launch Roblox with Bloxstrap. Wait for the "Starting Roblox..." popup to appear.  
-* As soon as you see this message, try to attach Swift once or twice.  
-* Do not attach before this message appears or after Roblox has fully loaded.  
+Recommended VPNs for Swift users:
+
+- [Cloudflare WARP](https://1.1.1.1/) (free and fast)  
+- NordVPN  
+- ExpressVPN  
+- ProtonVPN  
+
+Enable the VPN **before launching Swift** and Roblox to avoid network or license issues.  
 [Back to top](#table-of-contents)
 
 ---
 
-## Fishstrap Setup
+## 30. Module Not Found Fix
 
-> [TIP]  
-> We recommend **Fishstrap** as it gives you more control over Roblox versions.
+If Swift throws a **"Module not found"** error:
 
-### Fishstrap Settings for Swift:
+- Ensure all required dependencies (.NET SDK, VC Redist, WebView2) are installed.  
+- Run Swift as Administrator.  
+- Delete and reinstall Swift completely, clearing `%localappdata%\Swift` and `%localappdata%\Roblox`.  
+- Disable antivirus or add Swift folder to antivirus exclusions.  
+- Use the official Swift folder structure: only `Swift.exe` inside `Swift` folder.
 
-* **Channel Configuration:** In settings, go to Deployment and set Primary Channel to LIVE.  
-* **Automatic Channel Change:** Set "Automatic channel change action" to Always Prompt.  
-* **Roblox Update Prompts:** If Roblox asks you to update, Reject the prompt.  
-* **Attaching Swift:** Wait for the "Starting Roblox..." popup, then attach Swift once or twice.  
+Retry after these steps.  
 [Back to top](#table-of-contents)
 
 ---
 
-## Known Issues Planned Features
+## 31. Failed to Relocate Module Fix
 
-**Script editor bugs:**
+This error typically occurs if Swift's module is corrupted or outdated:
 
-* Tab autofill does not work correctly.  
-* You cannot rename files or tabs in the editor.
+- Update Swift to the latest version.  
+- Delete `Swift-Module.dll` and related files from the Swift folder, then restart Swift.  
+- Make sure Roblox and Swift run with Administrator privileges.  
+- Check your GPU drivers are up to date.  
+- If using custom launchers (Bloxstrap/Fishstrap), follow their attach timing guides strictly.
 
-**Planned:**
-
-* Multi-instance support is not exactly 100% helpful we're working on fixes and how to run it properly.
+If the issue persists, reinstall Swift and Roblox cleanly.  
 [Back to top](#table-of-contents)
 
 ---
 
-## End of Guide
+## 32. System Clock Incorrect Fix
+
+Swift requires your Windows system clock to be accurate:
+
+- Go to **Settings > Time & Language > Date & Time**.  
+- Toggle **Set time automatically** OFF then ON.  
+- Click **Sync now** to manually sync.  
+- Verify time zone is correct.  
+- Restart Swift after syncing.
+
+Incorrect system time causes license and injection errors.  
+[Back to top](#table-of-contents)
+
+---
+
+## 33. Fatal Error: Unexpected Error
+
+This generic error may be due to corrupted files or conflicts:
+
+- Restart PC and run Swift as Administrator.  
+- Delete `%localappdata%\Swift` and reinstall Swift.  
+- Update all dependencies (.NET, VC Redist, WebView2).  
+- Temporarily disable antivirus and firewall.  
+- Use alternate Roblox launchers (Fishstrap/Bloxstrap) if default Roblox launcher causes issues.
+
+Contact support with logs if error persists.  
+[Back to top](#table-of-contents)
+
+---
+
+## 34. Fatal Error: ServerCreationFailed
+
+This error is related to issues creating a graphics context for injection:
+
+- Update your GPU drivers to the latest version from official manufacturer sites.  
+- Ensure your GPU supports DirectX 11 or higher.  
+- Disable fullscreen optimizations on Roblox and Swift executables.  
+- Run Swift and Roblox as Administrator.  
+- Try switching between Roblox launchers (default, Bloxstrap, Fishstrap).  
+- Restart PC after applying fixes.
+
+If none work, check Swift Discord for updates or hardware compatibility notes.  
+[Back to top](#table-of-contents)
+
+---
+
+# End of Guide
 
 Regularly updated. Join [Swift Discord](https://discord.gg/getswiftgg) for support or news.

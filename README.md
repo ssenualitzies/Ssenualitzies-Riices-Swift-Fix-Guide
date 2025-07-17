@@ -301,7 +301,7 @@ Click **DOWNLOAD SPECIFIED HASH** again and wait for the download to complete.
 
 ### 4. Extract Files  
 Use File Explorer to extract the downloaded folder.  
-![Extracting](https://imgur.com/a/onvn0Iz)
+![Extracting](https://imgur.com/a/onvn0Iz.png)
 
 ---
 

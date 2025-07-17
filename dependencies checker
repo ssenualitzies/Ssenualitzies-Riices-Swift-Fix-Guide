@@ -1,0 +1,377 @@
+import os
+import sys
+import tempfile
+import subprocess
+import urllib.request
+import shutil
+from pathlib import Path
+import zipfile
+import winreg
+import ctypes
+from ctypes import wintypes
+import json
+
+def is_dotnet_desktop_runtime_installed():
+    """Check if .NET Desktop Runtime 8.0+ is installed using official Microsoft method"""
+    try:
+        result = subprocess.run(['dotnet', '--list-runtimes'], capture_output=True, text=True, timeout=10)
+        if result.returncode == 0:
+            output = result.stdout.lower()
+            for line in output.split('\n'):
+                if 'microsoft.windowsdesktop.app' in line and '8.0' in line:
+                    return True
+    except Exception:
+        pass
+    
+    return False
+
+def is_vcredist_x64_installed():
+    """Check if Visual C++ Redistributable x64 is installed using registry"""
+    try:
+        key_path = "SOFTWARE\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\x64"
+        try:
+            with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, key_path, 0, winreg.KEY_READ | winreg.KEY_WOW64_64KEY) as key:
+                installed_value, _ = winreg.QueryValueEx(key, "Installed")
+                return installed_value == 1
+        except FileNotFoundError:
+            pass
+        
+        return False
+    except Exception as e:
+        print(f"Error checking x64 VC redistributable: {e}")
+        return False
+
+def is_vcredist_x86_installed():
+    """Check if Visual C++ Redistributable x86 is installed using registry"""
+    try:
+        key_paths = [
+            "SOFTWARE\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\x86",
+            "SOFTWARE\\WOW6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\x86"
+        ]
+        
+        for key_path in key_paths:
+            for use_64bit in [False, True]:
+                try:
+                    access_flags = winreg.KEY_READ | (winreg.KEY_WOW64_64KEY if use_64bit else winreg.KEY_WOW64_32KEY)
+                    with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, key_path, 0, access_flags) as key:
+                        installed_value, _ = winreg.QueryValueEx(key, "Installed")
+                        if installed_value == 1:
+                            return True
+                except FileNotFoundError:
+                    continue
+                except Exception as e:
+                    print(f"Error checking registry key {key_path}: {e}")
+                    continue
+        
+        return False
+    except Exception as e:
+        print(f"Error checking x86 VC redistributable: {e}")
+        return False
+
+def is_webview2_installed():
+    """Check if Microsoft Edge WebView2 is installed using official Microsoft method"""
+    is_64bit = sys.maxsize > 2**32
+    
+    if is_64bit:
+        registry_paths = [
+            (winreg.HKEY_LOCAL_MACHINE, "SOFTWARE\\WOW6432Node\\Microsoft\\EdgeUpdate\\Clients\\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}"),
+            (winreg.HKEY_CURRENT_USER, "Software\\Microsoft\\EdgeUpdate\\Clients\\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}")
+        ]
+    else:
+        registry_paths = [
+            (winreg.HKEY_LOCAL_MACHINE, "SOFTWARE\\Microsoft\\EdgeUpdate\\Clients\\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}"),
+            (winreg.HKEY_CURRENT_USER, "Software\\Microsoft\\EdgeUpdate\\Clients\\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}")
+        ]
+    
+    for hkey, subkey_path in registry_paths:
+        try:
+            with winreg.OpenKey(hkey, subkey_path, 0, winreg.KEY_READ) as key:
+                try:
+                    pv_value, _ = winreg.QueryValueEx(key, "pv")
+                    if pv_value and pv_value != "0.0.0.0" and pv_value.strip():
+                        return True
+                except FileNotFoundError:
+                    continue
+        except FileNotFoundError:
+            continue
+        except Exception:
+            continue
+    
+    return False
+
+def is_directx_installed():
+    """Check if DirectX runtime is installed by looking for common DLLs"""
+    directx_dlls = [
+        "d3dx9_43.dll",
+        "d3dx9_42.dll", 
+        "d3dx9_41.dll",
+        "d3dx9_40.dll",
+        "xinput1_3.dll",
+        "xinput1_4.dll"
+    ]
+    
+    try:
+        system32_path = os.path.join(os.environ.get('WINDIR', 'C:\\Windows'), 'System32')
+        syswow64_path = os.path.join(os.environ.get('WINDIR', 'C:\\Windows'), 'SysWOW64')
+        
+        for dll in directx_dlls:
+            system32_dll = os.path.join(system32_path, dll)
+            syswow64_dll = os.path.join(syswow64_path, dll)
+            
+            if os.path.exists(system32_dll) or os.path.exists(syswow64_dll):
+                return True
+    except Exception:
+        pass
+    
+    return False
+
+def check_all_dependencies():
+    """Check status of all dependencies"""
+    print("= Checking Installed Dependencies =\n")
+    
+    checks = [
+        (".NET Desktop Runtime 8.0+", is_dotnet_desktop_runtime_installed),
+        ("Visual C++ Redistributable x64", is_vcredist_x64_installed),
+        ("Visual C++ Redistributable x86", is_vcredist_x86_installed),
+        ("Microsoft Edge WebView2", is_webview2_installed),
+        ("DirectX Runtime", is_directx_installed),
+    ]
+    
+    installed_status = {}
+    
+    for name, check_func in checks:
+        try:
+            print(f"Checking {name}...")
+            is_installed = check_func()
+            status = "INSTALLED" if is_installed else "NOT INSTALLED"
+            print(f"{name:<35} {status}")
+            installed_status[name] = is_installed
+        except Exception as e:
+            print(f"{name:<35} CHECK FAILED: {e}")
+            installed_status[name] = False
+        print()
+    
+    return installed_status
+
+def download_file(url, filename):
+    """Download a file with progress indication"""
+    print(f"Downloading {filename}...")
+    try:
+        urllib.request.urlretrieve(url, filename)
+        print(f"Downloaded {filename}")
+        return True
+    except Exception as e:
+        print(f"Failed to download {filename}: {e}")
+        return False
+
+def run_installer(installer_path, args, description):
+    """Run an installer with specified arguments"""
+    print(f"Installing {description}...")
+    try:
+        result = subprocess.run([installer_path] + args, 
+                              capture_output=True, text=True, timeout=300)
+        
+        if result.returncode == 0:
+            print(f"{description} installed successfully")
+            return True
+        
+        elif "Visual C++" in description and result.returncode in [3010, 3011]:
+            print(f"{description} installed successfully (restart may be required)")
+            return True
+        
+        elif result.returncode in [3010, 3011]:
+            print(f"{description} is already installed or updated")
+            return True
+        
+
+        elif result.returncode in [1641, 1618]:
+            print(f"{description} installed successfully (code {result.returncode})")
+            return True
+        
+        else:
+            print(f"{description} installation failed with code {result.returncode}")
+            if result.stderr:
+                print(f"Error: {result.stderr}")
+            if "Visual C++" in description and result.returncode == 1638:
+                print("This often means a newer version is already installed")
+                return True
+            return False
+            
+    except subprocess.TimeoutExpired:
+        print(f"{description} installation timed out")
+        return False
+    except Exception as e:
+        print(f"Failed to install {description}: {e}")
+        return False
+
+def extract_and_install_directx(zip_path, temp_dir):
+    """Extract DirectX redistributable and run DXSETUP.exe"""
+    print("Extracting DirectX Runtime...")
+    try:
+        extract_dir = os.path.join(temp_dir, "directx_extracted")
+        os.makedirs(extract_dir, exist_ok=True)
+        
+        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+            zip_ref.extractall(extract_dir)
+        
+        dxsetup_path = None
+        for root, dirs, files in os.walk(extract_dir):
+            for file in files:
+                if file.lower() == 'dxsetup.exe':
+                    dxsetup_path = os.path.join(root, file)
+                    break
+            if dxsetup_path:
+                break
+        
+        if dxsetup_path:
+            return run_installer(dxsetup_path, ['/silent'], "DirectX Runtime")
+        else:
+            print("DXSETUP.exe not found in DirectX package")
+            return False
+    except Exception as e:
+        print(f"Failed to extract DirectX: {e}")
+        return False
+
+def main():
+    """Main installation function"""
+    print("= Swift Dependencies Installer =")
+    print("This will check and install required dependencies for Taylor Swift\n")
+    
+    installed_status = check_all_dependencies()
+    
+    already_installed = sum(1 for installed in installed_status.values() if installed)
+    total_deps = len(installed_status)
+    
+    if already_installed == total_deps:
+        print("All dependencies are already installed!")
+        input("Press Enter to exit...")
+        return
+    elif already_installed > 0:
+        print(f"Found {already_installed}/{total_deps} dependencies already installed.")
+        print("Will only install missing dependencies.\n")
+    else:
+        print("No dependencies found installed. Will install all required dependencies.\n")
+    
+    try:
+        is_admin = ctypes.windll.shell32.IsUserAnAdmin()
+        if not is_admin:
+            print("Warning: Not running as administrator. Some installations might fail.")
+            response = input("Continue anyway? (y/n): ")
+            if response.lower() != 'y':
+                return
+    except:
+        pass
+    
+    temp_dir = tempfile.mkdtemp(prefix="deps_installer_")
+    print(f"Using temporary directory: {temp_dir}\n")
+    
+    try:
+        downloads = [
+            {
+                "name": ".NET Desktop Runtime 8.0+",
+                "url": "https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/8.0.16/windowsdesktop-runtime-8.0.16-win-x64.exe",
+                "filename": "dotnet-runtime-8.0.16-win-x64.exe",
+                "args": ["/quiet", "/norestart"],
+                "type": "exe",
+                "check_key": ".NET Desktop Runtime 8.0+"
+            },
+            {
+                "name": "Visual C++ Redistributable x64",
+                "url": "https://aka.ms/vs/17/release/vc_redist.x64.exe",
+                "filename": "VC_redist.x64.exe",
+                "args": ["/quiet", "/norestart"],
+                "type": "exe",
+                "check_key": "Visual C++ Redistributable x64"
+            },
+            {
+                "name": "Visual C++ Redistributable x86",
+                "url": "https://aka.ms/vs/17/release/vc_redist.x86.exe",
+                "filename": "VC_redist.x86.exe",
+                "args": ["/quiet", "/norestart"],
+                "type": "exe",
+                "check_key": "Visual C++ Redistributable x86"
+            },
+            {
+                "name": "Microsoft Edge WebView2",
+                "url": "https://go.microsoft.com/fwlink/p/?LinkId=2124703",
+                "filename": "MicrosoftEdgeWebview2Setup.exe",
+                "args": ["/silent", "/install"],
+                "type": "exe",
+                "check_key": "Microsoft Edge WebView2"
+            },
+            {
+                "name": "DirectX Runtime",
+                "url": "https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE4-82A8-40A96E7AB2BF/directx_Jun2010_redist.exe",
+                "filename": "directx_Jun2010_redist.exe",
+                "args": ["/Q"],
+                "type": "directx_special",
+                "check_key": "DirectX Runtime"
+            }
+        ]
+        
+        successful_installs = 0
+        skipped_installs = 0
+        total_needed = 0
+        
+        for item in downloads:
+            check_key = item.get("check_key", item["name"])
+            
+            if installed_status.get(check_key, False):
+                print(f"\n--- Skipping {item['name']} (already installed) ---")
+                skipped_installs += 1
+                continue
+            
+            total_needed += 1
+            print(f"\n--- Processing {item['name']} ---")
+            
+            file_path = os.path.join(temp_dir, item['filename'])
+            
+            if download_file(item['url'], file_path):
+                if item['type'] == 'directx_special':
+                    if run_installer(file_path, item['args'], item['name']):
+                        successful_installs += 1
+                    else:
+                        print("Trying alternative DirectX installation method...")
+                        if extract_and_install_directx(file_path, temp_dir):
+                            successful_installs += 1
+                else:
+                    if run_installer(file_path, item['args'], item['name']):
+                        successful_installs += 1
+            
+            print("-" * 50)
+        
+        print(f"\n=== Installation Summary ===")
+        print(f"Dependencies already installed: {skipped_installs}")
+        print(f"Dependencies needing installation: {total_needed}")
+        print(f"Successfully installed: {successful_installs}/{total_needed}")
+        
+        if total_needed == 0:
+            print("All dependencies were already installed!")
+        elif successful_installs == total_needed:
+            print("All missing dependencies installed successfully!")
+        elif successful_installs > 0:
+            print("Some dependencies were installed, but there were failures.")
+            print("Swift might not work, please report to @riices.")
+        else:
+            print("No missing dependencies were installed successfully.")
+            print("Please check your internet connection and try running as administrator.")
+            print("if this continues please report to @riices")
+        
+    except KeyboardInterrupt:
+        print("\n\nInstallation cancelled by user >:'(' ")
+    except Exception as e:
+        print(f"\nUnexpected error: {e}")
+    finally:
+        print(f"\nCleaning up temporary files...")
+        try:
+            shutil.rmtree(temp_dir)
+            print("Temporary files cleaned up")
+        except Exception as e:
+            print(f"Could not clean up temporary directory: {e}")
+            print(f"You may manually delete: {temp_dir}")
+    
+    print("\nYou can close this now")
+    input("Press Enter to exit...")
+
+if __name__ == "__main__":
+    main()

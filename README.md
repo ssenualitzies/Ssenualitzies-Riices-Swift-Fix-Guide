@@ -518,7 +518,7 @@ Swift requires your Windows system clock to be accurate:
 - Click **Sync now** to manually sync.  
 - Verify time zone is correct.  
 - Restart Swift after syncing.
-- [timesync img](https://imgur.com/a/VLxFdbV.png)
+- [sync](https://imgur.com/a/VLxFdbV.png)
 
 Incorrect system time causes license and injection errors.  
 [Back to top](#table-of-contents)

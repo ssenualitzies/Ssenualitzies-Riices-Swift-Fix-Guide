@@ -363,14 +363,20 @@ Or redo key system: [See Section 16](#16-worklink-easy-key-method-full-guide)
 
 ## 18. CAPTCHA Bug Troubleshooting
 
-* Try multiple browsers or disable protection.  
+* Try multiple browsers or disable protection in settings.
+* Supported browsers: Edge, Chrome, Brave, Firefox, Opera, etc.
+* Refreshing the page or using incognito mode may help.
+
 [Back to top](#table-of-contents)
 
 ---
 
 ## 19. No License Found Suggested Solutions
 
-* Retry, switch IP/VPN, or clear cache.  
+* Retry, switch IP/VPN, or clear cache ([cache deleting tutorial](https://www.youtube.com/watch?v=5jdDSjH7FN0))
+* Use [Warp VPN](https://one.one.one.one/)
+* Or try other browsers such as Edge, Chrome, Brave, Firefox, Opera, etc.
+
 [Back to top](#table-of-contents)
 
 ---
@@ -491,13 +497,14 @@ Retry after these steps.
 
 This error typically occurs if Swift's module is corrupted or outdated:
 
-- Update Swift to the latest version.  
+- Update Swift to the latest version or reinstall.  
 - Delete `Swift-Module.dll` and related files from the Swift folder, then restart Swift.  
+- Check your protection history in microsoft defender and restore any swift files 
 - Make sure Roblox and Swift run with Administrator privileges.  
 - Check your GPU drivers are up to date.  
 - If using custom launchers (Bloxstrap/Fishstrap), follow their attach timing guides strictly.
 
-If the issue persists, reinstall Swift and Roblox cleanly.  
+If the issue persists, reinstall Swift and Roblox cleanly.
 [Back to top](#table-of-contents)
 
 ---
@@ -511,6 +518,7 @@ Swift requires your Windows system clock to be accurate:
 - Click **Sync now** to manually sync.  
 - Verify time zone is correct.  
 - Restart Swift after syncing.
+- [timesync img](https://imgur.com/a/VLxFdbV.png)
 
 Incorrect system time causes license and injection errors.  
 [Back to top](#table-of-contents)
@@ -526,6 +534,7 @@ This generic error may be due to corrupted files or conflicts:
 - Update all dependencies (.NET, VC Redist, WebView2).  
 - Temporarily disable antivirus and firewall.  
 - Use alternate Roblox launchers (Fishstrap/Bloxstrap) if default Roblox launcher causes issues.
+- using [warp vpn](https://1.1.1.1) also can resolve the issue.
 
 Contact support with logs if error persists.  
 [Back to top](#table-of-contents)

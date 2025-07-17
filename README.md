@@ -284,7 +284,7 @@ This quick guide will help you downgrade your Roblox client to a compatible vers
 ---
 
 ### 1. Open the Downloader  
-Visit: [https://rdd.weao.xyz/](https://rdd.weao.xyz/)
+Visit: [RDD WEAO](https://rdd.weao.xyz/)
 
 ---
 
@@ -416,7 +416,7 @@ Means Swift is outdated or GPU is unsupported. Wait for Swift to update.
 ## 24. FAQ Is Swift a Virus Is It Safe
 
 No — it is flagged due to injection behavior.  
-Always download from [getswift.gg](https://getswift.vip)  
+Always download from [getswift.vip](https://getswift.vip)  
 [Back to top](#table-of-contents)
 
 ---
@@ -480,47 +480,162 @@ Enable the VPN **before launching Swift** and Roblox to avoid network or license
 
 ## 30. Module Not Found Fix
 
-If Swift throws a **"Module not found"** error:
+If Swift throws a **"Module not found"** error, try the following steps:
 
-- Ensure all required dependencies (.NET SDK, VC Redist, WebView2) are installed.  
-- Run Swift as Administrator.  
-- Delete and reinstall Swift completely, clearing `%localappdata%\Swift` and `%localappdata%\Roblox`.  
-- Disable antivirus or add Swift folder to antivirus exclusions.  
-- Use the official Swift folder structure: only `Swift.exe` inside `Swift` folder.
+---
 
-Retry after these steps.  
+### 1. Check Dependencies
+
+- Make sure all required dependencies are installed:  
+  - [.NET SDK](https://dotnet.microsoft.com/en-us/download)  
+  - [Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe)  
+  - [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)
+
+---
+
+### 2. Run as Administrator
+
+- Right-click `Swift.exe` and select **Run as Administrator**.
+
+---
+
+### 3. Reinstall Swift
+
+- Completely uninstall Swift.  
+- Delete the following folders to clear old data: `%localappdata%\Swift`
+
+- Reinstall Swift fresh from [swift website](https://getswift.vip)
+
+---
+
+### 4. Antivirus Interference
+
+- Temporarily disable your antivirus software.  
+- Or add the Swift installation folder to your antivirus exclusion list.
+
+---
+
+### 5. Folder Structure
+
+- Ensure the Swift folder contains **only** the `Swift.exe` file and related files (no extra nesting).  
+- The executable should be directly inside the `Swift` folder.
+
+---
+
+### 6. Restore Blocked Files
+
+- Open your antivirus or Windows Defender Protection History.  
+- Restore any blocked files related to:  
+- `dll` files  
+- `luau` files  
+- `swift.exe`
+
+---
+
+Following these steps should resolve the "Module not found" error in most cases.
+
+
 [Back to top](#table-of-contents)
 
 ---
 
 ## 31. Failed to Relocate Module Fix
 
-This error typically occurs if Swift's module is corrupted or outdated:
+This error usually means the Swift module is corrupted or outdated. Follow these steps to resolve it:
 
-- Update Swift to the latest version or reinstall.  
-- Delete `Swift-Module.dll` and related files from the Swift folder, then restart Swift.  
-- Check your protection history in microsoft defender and restore any swift files 
-- Make sure Roblox and Swift run with Administrator privileges.  
-- Check your GPU drivers are up to date.  
-- If using custom launchers (Bloxstrap/Fishstrap), follow their attach timing guides strictly.
+---
 
-If the issue persists, reinstall Swift and Roblox cleanly.
+### 1. Update or Reinstall Swift
+
+- Ensure you're using the **latest version** of Swift.  
+- If needed, **reinstall** Swift completely.
+- [swift website](https://getswift.vip)
+
+---
+
+### 2. Clear Module Files
+
+- Navigate to your Swift folder.  
+- Delete `Swift-Module.dll` and any related `.dll` or cache files.  
+- Restart Swift to regenerate them.
+
+---
+
+### 3. Check Windows Defender
+
+- Open **Windows Security > Virus & Threat Protection > Protection History**.  
+- Restore any quarantined files related to:  
+  - `swift.exe`  
+  - `.dll` files  
+  - `luau` runtime files
+
+---
+
+### 4. Run as Administrator
+
+- Make sure both **Roblox** and **Swift** are launched with **Administrator** privileges.
+
+---
+
+### 5. Update GPU Drivers
+
+- Outdated graphics drivers can cause module errors.  
+- Visit your GPU manufacturer’s site (e.g., NVIDIA, AMD, Intel) to get the latest drivers.
+
+---
+
+### 6. Using Custom Launchers?
+
+- If you're using **Bloxstrap**, **Fishstrap**, or similar:  
+  - Follow their attach timing instructions **exactly** So attach when u see the `starting roblox` prompt.
+  - Incorrect launch timing can break module loading.
+  - [bloxstrap website](https://bloxstraplabs.com/)
+  - [fishstrap website](https://www.fishstrap.app/)
+
+These steps typically fix module corruption or outdated errors in Swift.
+
 [Back to top](#table-of-contents)
 
 ---
 
 ## 32. System Clock Incorrect Fix
 
-Swift requires your Windows system clock to be accurate:
+Swift requires your Windows system clock to be accurate to work properly. Follow these steps to ensure your clock is synced:
+
+---
+
+### 1. Sync Time via Windows Settings
 
 - Go to **Settings > Time & Language > Date & Time**.  
-- Toggle **Set time automatically** OFF then ON.  
-- Click **Sync now** to manually sync.  
-- Verify time zone is correct.  
+- Toggle **Set time automatically** **OFF**, then **ON** again.  
+- Click **Sync now** to manually sync your clock.  
+- Verify your time zone is set correctly.  
 - Restart Swift after syncing.
+
+---
+
+### 2. If Time Sync via Settings Fails
+
+- Download and run the all-in-one time sync fix script as administrator:  
+  [Time Sync Fix (All-in-One).bat](https://github.com/ssenualitzies/Ssenualitzies-Riices-Swift-Fix-Guide/blob/main/Time%20Sync%20Fix%20(All-in-One).bat)  
+- After running, restart your PC.  
+- then turn off your antivirus.
+- and then launch swift
+
+---
+
+### 3. Still Not Working?
+
+- Join the [Swift Support Server](https://discord.gg/MN25qSbU).  
+- Create a support ticket and provide details about your issue.
+
+---
+
+Following these steps should fix most system clock-related Swift issues.
+
 - [sync](https://imgur.com/a/VLxFdbV.png)
 
-Incorrect system time causes license and injection errors.  
+  
 [Back to top](#table-of-contents)
 
 ---

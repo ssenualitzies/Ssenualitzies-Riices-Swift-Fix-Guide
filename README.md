@@ -168,62 +168,46 @@ Use alternate launchers like Fishstrap/Bloxstrap:
 
 ## 10. Injection Timeout Error Fix
 
-### ✅ Step 1: Use an Administrator Account  
-#### 🔁 Option A: Temporarily Switch to an Admin Account
+If you're encountering **InjectTimeout issues** with Swift, follow this step-by-step solution:
 
-1. **Log into a Windows administrator account**.  
-2. **Remove Roblox data**:
+---
 
-   * Press `Win + R`, type `%localappdata%` and press Enter.  
-   * In the folder that opens, **delete the entire `Roblox` directory**.  
-3. Download Roblox via [**RDD by Weao**](https://rdd.weao.xyz):
+## **I. Restore & Exclude `luau.exe`**
 
-   * Click the **“Download Latest Version”** (second highlighted link).  
-   * Extract the downloaded folder fully.  
-4. **Run Swift as administrator** (right‑click → *Run as administrator*).  
-5. Inside the extracted `weao live` folder:
+1. Open **Windows Security** → **Protection History**
+2. Locate and **restore `luau.exe`**
+3. Add **`luau.exe`** to your **exclusions**
+4. Ensure **Swift** is also in your exclusions
 
-   * Launch `RobloxPlayerBeta.exe`.  
-   * Sign in to your Roblox account.  
-   * Once on the **Roblox homepage**, press **Attach** in Swift.  
+---
 
-#### 🔁 Option B: Stay on Your Regular Account
+## **II. Download Latest Roblox Version **
 
-> Already using an admin account or want to go back to your main one?
+1. 📂 Download the latest Roblox Version:
+   👉 https://rdd.weao.gg/?channel=LIVE&binaryType=WindowsPlayer&version=version-89b6c70d8f7f42ac
+2. Extract the **weao** folder you just downloaded
+3. Then Run **Roblox Player Beta** as **Administrator**
 
-1. Log into your **main (non‑admin) Windows account**.  
-2. Launch both:
+---
 
-   * **Swift** as administrator  
-   * `RobloxPlayerBeta.exe` from the same `weao live` folder as administrator  
-3. Once Roblox loads to the homepage, press **Attach** in Swift.  
+## **III. Attach Swift**
 
-### 🔄 Step 2: Reinstall Swift & Roblox (Clean Install)
+1. Launch **Swift** (as Administrator)
+2. Go to the **Roblox homepage**
+3. Click the **plug icon** to **attach Swift**
 
-1. **Delete leftover data**:
+---
 
-   * Press `Win + R`, type `%localappdata%` and press Enter.  
-   * Delete any **`Swift`** and **`Roblox`** folders.  
-2. **Uninstall via Control Panel**:
+> **Important:**
+> When using swift you must use the WEAO `RobloxPlayerBeta`
+> This may decrease the time before getting banned but at least you can exploit
+> Always use an alt account with a vpn, [Proton Vpn](https://proton.me/) Or [Windscribe Vpn](https://windscribe.com/) both free vpns
 
-   * Go to **Control Panel > Programs > Programs and Features** and uninstall both **Swift** and **Roblox**.  
-3. **Reinstall both tools**:
+## ✅ **Final Notes**
 
-   * [Download Swift](https://getswift.vip)  
-   * [Download Roblox via RDD](https://rdd.weao.xyz)  
-
-### ⚙️ Optional: Use Custom Roblox Launchers
-
-You can also use one of these launchers for more control:
-
-* [**Bloxstrap**](https://bloxstraplabs.com)  
-* [**Fishstrap**](https://www.fishstrap.app)  
-
-> **Injection Timing Tips**:  
->  
-> * For **Bloxstrap / Fishstrap** → Inject when **“Starting Roblox”** appears.  
-> * For **RobloxPlayerBeta (Weao)** → Inject after fully loading into the homepage.  
-
+* Always run both **Swift** and **Roblox** as **Administrator**
+* Make sure your antivirus isn’t blocking **luau.exe** or **Swift**
+* If problems persist, try reinstalling both **Swift** from https://getswift.vip and Roblox using the RDD link
 ---
 
 ## 11. Black Screen on Injection Fix

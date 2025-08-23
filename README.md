@@ -31,7 +31,7 @@ And if you want, say hi to him on Discord — his username is **riicess**.
 7. [Time Sync Fix](#7-time-sync-fix)  
 8. [Notepad / Crash Fix Guide](#8-notepad--crash-fix-guide)  
 9. [Advanced Notepad Crash / Injection Fix Use FishstrapBloxstrap](#9-advanced-notepad-crash--injection-fix-use-fishstrapbloxstrap)  
-10. [Injection Timeout Error Fix](#10-injection-timeout-error-fix)  
+10. [ Error Fix](#10-injection-timeout-error-fix)  
 11. [Black Screen on Injection Fix](#11-black-screen-on-injection-fix)  
 12. [Swift Module Not Update VPN Error Website Not Loading Fix](#12-swift-module-not-update-vpn-error-website-not-loading-fix)  
 13. [ScriptHub Not Loading Fix](#13-scripthub-not-loading-fix)  
@@ -170,16 +170,12 @@ Use alternate launchers like Fishstrap/Bloxstrap:
 
 If you're encountering **InjectTimeout issues** with Swift, follow this step-by-step solution:
 
----
-
 ## **I. Restore & Exclude `luau.exe`**
 
 1. Open **Windows Security** → **Protection History**
 2. Locate and **restore `luau.exe`**
 3. Add **`luau.exe`** to your **exclusions**
 4. Ensure **Swift** is also in your exclusions
-
----
 
 ## **II. Download Latest Roblox Version **
 
@@ -188,15 +184,11 @@ If you're encountering **InjectTimeout issues** with Swift, follow this step-by-
 2. Extract the **weao** folder you just downloaded
 3. Then Run **Roblox Player Beta** as **Administrator**
 
----
-
 ## **III. Attach Swift**
 
 1. Launch **Swift** (as Administrator)
 2. Go to the **Roblox homepage**
 3. Click the **plug icon** to **attach Swift**
-
----
 
 > **Important:**
 > When using swift you must use the WEAO `RobloxPlayerBeta`
